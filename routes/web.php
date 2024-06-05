@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'homeView']);
 Route::get('/web_form', [FormController::class,'web_form'])->name('web_form');
+Route::get('/logo_form', [FormController::class,'logo_form'])->name('logo_form');
+Route::post('/logo_form_store', [FormController::class,'logo_form_store'])->name('logo_form_store');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');

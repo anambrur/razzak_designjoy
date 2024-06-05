@@ -240,7 +240,7 @@
                             data-w-id="4d1357d3-311e-f62e-4900-aa7c1e085e49" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper subscrobe">
                                 <div class="arrows" data-w-id="6bec910e-5701-0711-8bae-6915e2385242"
-                                    data-animation-type="lottie" data-src="./assets/fontend/like.json" data-loop="1"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/like.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="2.7" data-duration="0"></div>
                             </div>
@@ -253,7 +253,7 @@
                             data-w-id="73d92408-3dab-587e-0b05-17dcbbe15620" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper folder">
                                 <div class="lottie-animation-2" data-w-id="0ba5e2ac-eb5c-3ac2-fa81-2f6558a3fcce"
-                                    data-animation-type="lottie" data-src="./assets/fontend/Animation_hiw_2.json"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Animation_hiw_2.json"
                                     data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
                                     data-renderer="svg" data-default-duration="3.3666666666666667" data-duration="0">
                                 </div>
@@ -266,7 +266,7 @@
                             data-w-id="6d922881-bfff-0987-da98-c889636cd530" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper thum">
                                 <div class="lottie-animation-3" data-w-id="386b46d3-b9a9-cafd-ce41-01c643b61282"
-                                    data-animation-type="lottie" data-src="./assets/fontend/Animation_hiw_3.json"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Animation_hiw_3.json"
                                     data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
                                     data-renderer="svg" data-default-duration="1.2" data-duration="0"></div>
                             </div>
@@ -381,7 +381,7 @@
                             data-w-id="406f9178-bb63-55dc-8830-1bbb7db78043" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper dashj">
                                 <div data-w-id="ca6b324b-cc7f-c4d2-07f7-9de40ed30e3f" data-animation-type="lottie"
-                                    data-src="./assets/fontend/Member_ship_animation_1.json" data-loop="1"
+                                    data-src="./assets/fontend/json/Member_ship_animation_1.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="4.55" data-duration="0"></div>
                             </div>
@@ -395,7 +395,7 @@
                             data-w-id="406f9178-bb63-55dc-8830-1bbb7db78049" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper flash">
                                 <div class="flash" data-w-id="082857b1-7d77-cde5-24d5-b791203ccf81"
-                                    data-animation-type="lottie" data-src="./assets/fontend/Member_ship_animation_2.json"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Member_ship_animation_2.json"
                                     data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
                                     data-renderer="svg" data-default-duration="3" data-duration="0"></div>
                             </div>
@@ -408,7 +408,7 @@
                             data-w-id="406f9178-bb63-55dc-8830-1bbb7db7804f" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper fixed">
                                 <div data-w-id="a258deb3-5309-64b5-abd0-41bf753b10bd" data-animation-type="lottie"
-                                    data-src="./assets/fontend/Member_ship_animation_3.json" data-loop="1"
+                                    data-src="./assets/fontend/json/Member_ship_animation_3.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="3" data-duration="0"></div>
                             </div>
@@ -422,7 +422,7 @@
                             data-w-id="85cf7c8c-535f-7dba-81cc-516f1310e120" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper check">
                                 <div data-w-id="17e502d4-67ef-2568-986f-0fd5f6a6429b" data-animation-type="lottie"
-                                    data-src="./assets/fontend/Member_ship_animation_4.json" data-loop="1"
+                                    data-src="./assets/fontend/json/Member_ship_animation_4.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="2.0020019204587935" data-duration="0"></div>
                             </div>
@@ -436,7 +436,7 @@
                             data-w-id="ac4d681d-d0f4-b5f6-b9ea-932e2c7f05b2" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper scale">
                                 <div data-w-id="cec64caa-3605-04a4-da07-9a2fd15c776a" data-animation-type="lottie"
-                                    data-src="./assets/fontend/Member_ship_animation_5.json" data-loop="1"
+                                    data-src="./assets/fontend/json/Member_ship_animation_5.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="2" data-duration="0"></div>
                             </div>
@@ -450,7 +450,7 @@
                             data-w-id="5e890574-191e-4d00-5990-96837a4ca5b1" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper finger">
                                 <div class="finger-lottie" data-w-id="5dcecfbb-59de-a57a-a473-ec6ad62d9f78"
-                                    data-animation-type="lottie" data-src="./assets/fontend/Member_ship_animation_6.json"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Member_ship_animation_6.json"
                                     data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
                                     data-renderer="svg" data-default-duration="10" data-duration="0"></div>
                             </div>
@@ -989,7 +989,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="#" class="button_custom w-inline-block">
+                                                    <a href="{{route('web_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1063,7 +1063,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="#"
+                                                        style="opacity: 0" href="{{route('web_form')}}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
@@ -1158,7 +1158,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="#" class="button_custom w-inline-block">
+                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1231,7 +1231,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="#" class="button_custom w-inline-block">
+                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1305,7 +1305,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="#"
+                                                        style="opacity: 0" href="{{route('logo_form')}}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>

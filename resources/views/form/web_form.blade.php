@@ -345,7 +345,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card text-center" data-value="audio">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default.png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Hosting</div>
               </div>
@@ -353,7 +353,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="video">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (1).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_1.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Company Logo</div>
               </div>
@@ -361,7 +361,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="picture_gallery">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (2).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_2.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Newsletter</div>
               </div>
@@ -369,7 +369,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="animation">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (3).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_3.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Mobile App</div>
               </div>
@@ -377,7 +377,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="blog">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (4).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_4.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Photo & Video Production</div>
               </div>
@@ -385,7 +385,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="online_shop">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (5).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_5.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Online Marketing (SEO, Ads)</div>
               </div>
@@ -393,7 +393,7 @@
             <div class="col-md-3 mb-3 option_6">
               <div class="card p-3 text-center" data-value="client_login">
                 <div class="icon">
-                  <img src="./assets/fontend/img/default (6).png" alt="img" />
+                  <img src="{{ asset('assets/fontend/form_img/default_6.png') }}" alt="img" />
                 </div>
                 <div class="mt-2">Print Material</div>
               </div>
