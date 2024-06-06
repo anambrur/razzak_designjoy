@@ -188,18 +188,73 @@
 
 
             <!-- Step 7 -->
-            <div class="form-step">
-                <p><span class="step-number">7 →</span> Who is your target audience?</p>
-                <p class="subtext">Describe the primary audience for your brand or product.</p>
+            {{-- <div class="form-step">
+                <p><span class="step-number">7 →</span> How did you hear about us?This question is required.*</p>
+                <p class="subtext">If you heard about us from a friend, please select other and mention your friends name.</p>
+
+
+
                 <input type="text" id="target_audience" class="form-control_custom" name="target_audience"
                     placeholder="Type your answer here..." />
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
+            </div> --}}
+
+
+            <div class="form-step">
+                <p>
+                    <span class="step-number">7 →</span> How did you hear about us? This
+                    question is required.*
+                </p>
+                <p class="subtext">
+                    If you heard about us from a friend, please select other and mention
+                    your friend's name.
+                </p>
+                <div class="options_5 row">
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7" value="Google Search" />
+                            <span>A</span> Google Search
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7" value="Banner Ad" />
+                            <span>B</span> Banner Ad
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7" value="Newsletter" />
+                            <span>C</span> Newsletter
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7" value="Other" />
+                            <span>D</span> Other
+                        </label>
+                    </div>
+                </div>
+                <p class="subtext">Shift + Enter to make a line break</p>
+                <button type="button" class="next btn btn-primary">Ok</button>
+                <button type="button" class="previous btn btn-secondary"> <span><i
+                            class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
+
+
+
+
+
+
+
+
+
+
             <!-- Step 8 -->
-            <div class="form-step">
+            {{-- <div class="form-step">
                 <p><span class="step-number">8 →</span> Who are your competitors?</p>
                 <p class="subtext">List some of your main competitors and their websites if available.</p>
                 <input type="text" id="competitors" class="form-control_custom" name="competitors"
@@ -207,10 +262,10 @@
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
+            </div> --}}
 
             <!-- Step 9 -->
-            <div class="form-step">
+            {{-- <div class="form-step">
                 <p><span class="step-number">9 →</span> Any other information you would like to share?</p>
                 <p class="subtext">Feel free to provide any other details that you think might help us understand your
                     requirements better.</p>
@@ -219,11 +274,11 @@
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
+            </div> --}}
 
             <!-- Step 10 -->
             <div class="form-step">
-                <p><span class="step-number">10 →</span> Your contact information*</p>
+                <p><span class="step-number">8 →</span> Your contact information*</p>
                 <div class="mb-5">
                     <label for="first-name" class="form-label">First name *</label>
                     <input type="text" class="form-control_custom" id="first-name" name="first_name"

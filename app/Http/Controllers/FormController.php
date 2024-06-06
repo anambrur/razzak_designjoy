@@ -16,7 +16,11 @@ class FormController extends Controller
     }
     public function logo_form_store(Request $request)
     {
-
+        dd($request->all());
+        return view('form.logo_form');
+    }
+    public function web_form_store(Request $request)
+    {
         dd($request->all());
         return view('form.logo_form');
     }
