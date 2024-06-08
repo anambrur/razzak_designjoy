@@ -286,85 +286,7 @@
                 <img src="./assets/fontend/svg/svg_3.svg" loading="lazy" alt="" class="image-70" /><img
                     src="./assets/fontend/svg/svg_4.svg" loading="lazy" alt="" class="image-71" />
             </div>
-            <div class="quote">
-                <div class="container">
-                    <div class="quote__wrapper">
-                        <p data-w-id="0e559500-5a3b-0500-4937-9b4e21e6772a" style="opacity: 0"
-                            class="fine-print m-b-32">
-                            They said it best
-                        </p>
-                        <h3 data-w-id="c7671f67-0ba2-d65f-efc4-3f7c80538fa9" style="opacity: 0" class="heading">
-                            “Designjoy shows that they know the art of subtlety.”
-                        </h3>
-                        <img src="./assets/fontend/svg/webflow_logo.svg" loading="lazy" style="opacity: 0"
-                            data-w-id="dce422c8-3e57-9389-2f68-97299aaf05ef" alt="" class="webflow" />
-                    </div>
-                    <img src="./assets/fontend/svg/svg_5.svg" loading="lazy" style="opacity: 0"
-                        data-w-id="741bb0e6-c722-48ce-468d-9580a6bdbd41" alt="" class="divider" />
-                    <div data-w-id="a073f829-7d26-695a-119d-b9d3776cc833" style="opacity: 0" class="bb__wrapper">
-                        <h2 class="hiw-heading better">
-                            It’s “you’ll never go back” better
-                        </h2>
-                        <p class="bb__sub _5">
-                            Designjoy replaces unreliable freelancers and expensive agencies
-                            for one flat monthly fee, with designs delivered so fast that it
-                            will blow your mind.
-                        </p>
-                        <div class="button__wrapper m-t-40">
-                            <a href="index.html#plans" data-w-id="a05c7733-b67c-8898-cf35-c0588ba9648d"
-                                style="opacity: 0" class="button w-inline-block">
-                                <div>See plans</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="div-block-25">
-                        <div data-w-id="e1335146-f762-6ea5-a1a7-beb0ed54e0db" style="opacity: 0"
-                            class="div-block-26">
-                            <div>
-                                <h5 class="max">
-                                    “Design is everything, and these guys have nailed it.”
-                                </h5>
-                            </div>
-                            <div class="div-block-27">
-                                <div>
-                                    <div class="text-block-3">
-                                        Kevin O&#x27;Leary<br />Shark Tank
-                                    </div>
-                                </div>
-                                <img src="./assets/fontend/img/Group_8.png" loading="lazy"
-                                    sizes="(max-width: 767px) 37vw, (max-width: 991px) 38vw, 17vw" alt="img"
-                                    class="image-83" />
-                            </div>
-                        </div>
-                        <div data-w-id="b6488694-a8b5-3a4d-aaba-55e1e336d53a" style="opacity: 0"
-                            class="div-block-28">
-                            <div>
-                                <h5 class="heading-2">Totally async</h5>
-                                <p class="p-small smaller all">
-                                    Don&#x27;t like meetings? We don&#x27;t either; so much so
-                                    that we&#x27;ve outlawed them completely.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 class="heading-6">Manage with Trello</h5>
-                                <p class="p-small smaller all">
-                                    Manage your design board using Trello. View active, queued
-                                    and completed tasks with ease.
-                                </p>
-                            </div>
-                            <div>
-                                <h5 class="heading-7">Invite your team</h5>
-                                <p class="p-small smaller all">
-                                    Invite your entire team, so anyone can submit requests and
-                                    track their progress.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img src="./assets/fontend/svg/svg_6.svg" loading="lazy" alt="" class="image-72" /><img
-                    src="./assets/fontend/svg/svg_7.svg" loading="lazy" alt="" class="image-73" />
-            </div>
+            
             <div id="benefits" class="quote">
                 <div class="container">
                     <div data-w-id="d4c86736-49ca-3423-8367-b5c1feda07ac" style="opacity: 0" class="bb__wrapper">
@@ -593,7 +515,7 @@
                         </div>
                         <div data-w-id="215f8bbc-1d94-22cb-c472-3975de472baf" style="opacity: 0"
                             class="pricing__right-card">
-                            <h4 class="heading-8">Membership</h4>
+                            <h4 class="heading-8">Web Design</h4>
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
                                 <div class="tabs-menu w-tab-menu">
@@ -671,7 +593,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="#" class="button w-inline-block">
+                                                    <a href="{{route('web_form')}}" class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -744,7 +666,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="#" class="button w-inline-block">
+                                                    <a href="{{route('web_form')}}" class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -818,7 +740,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="#"
+                                                        style="opacity: 0" href="{{route('web_form')}}"
                                                         class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
@@ -838,7 +760,7 @@
                     <div class="w-layout-grid benefits__grid_custom">
                         <div data-w-id="215f8bbc-1d94-22cb-c472-3975de472baf" style="opacity: 0"
                             class="pricing__right-card_custom">
-                            <h4 class="heading-9">Web Design</h4>
+                            <h4 class="heading-9">Logo Design</h4>
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
                                 <div class="tabs-menu w-tab-menu">
@@ -916,7 +838,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('web_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -989,7 +911,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('web_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1063,7 +985,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="{{route('web_form')}}"
+                                                        style="opacity: 0" href="{{route('logo_form')}}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
@@ -1080,7 +1002,7 @@
                         </div>
                         <div data-w-id="215f8bbc-1d94-22cb-c472-3975de472baf" style="opacity: 0"
                             class="pricing__right-card_custom">
-                            <h4 class="heading-9">Logo Design</h4>
+                            <h4 class="heading-9">Online Marketing</h4>
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
                                 <div class="tabs-menu w-tab-menu">
@@ -1870,42 +1792,7 @@
                 </div>
                 <img src="./assets/fontend/svg/svg_17.svg" loading="lazy" alt="" class="image-78 _3" />
             </div>
-            <div class="div-block-29">
-                <div class="container">
-                    <div data-w-id="61568324-2c21-3489-8d5a-e3374855ea00" style="opacity: 0" class="div-block-30">
-                        <div class="scope _2">
-                            <img src="./assets/fontend/svg/footer_logo.svg" loading="lazy" alt=""
-                                class="image-88" />
-                            <h2 class="hiw-heading">Scribbbles</h2>
-                            <p class="bb__sub">
-                                A collection of funky vectorized scribbbles to spice up your
-                                design projects.
-                            </p>
-                            <div class="button__wrapper m-t-40">
-                                <a href="https://scribbbles.design/" target="_blank"
-                                    class="button w-inline-block">
-                                    <div>Download now</div>
-                                </a>
-                            </div>
-                            <p data-w-id="0eb70dc4-05eb-ca33-52fc-b3af07177060" style="opacity: 0" class="used">
-                                Used by over 30,000 designers &amp; top brands.
-                            </p>
-                        </div>
-                        <div class="funky__logos-flex">
-                            <img src="./assets/fontend/svg/google.svg" loading="lazy" alt=""
-                                class="funky__logo" /><img src="./assets/fontend/svg/in_vision.svg" loading="lazy"
-                                alt="" class="funky__logo" /><img src="./assets/fontend/svg/lagalZoom.svg"
-                                loading="lazy" alt="" class="funky__logo" /><img
-                                src="./assets/fontend/svg/verizoon.svg" loading="lazy" alt=""
-                                class="funky__logo verizon" /><img src="./assets/fontend/svg/chase.svg" loading="lazy"
-                                alt="" class="funky__logo chase" /><img src="./assets/fontend/svg/freelancher.svg"
-                                loading="lazy" alt="" class="funky__logo" />
-                        </div>
-                        <img src="./assets/fontend/svg/svg_18.svg" loading="lazy" alt="" class="image-85" /><img
-                            src="./assets/fontend/svg/svg_19.svg" loading="lazy" alt="" class="image-86" />
-                    </div>
-                </div>
-            </div>
+            
             <div class="div-block-23">
                 <div class="scope-marquee">
                     <div data-w-id="35cebc9d-1e88-0a44-106b-b4c01a138ce0" style="opacity: 0"

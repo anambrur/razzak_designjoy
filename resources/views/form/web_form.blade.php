@@ -43,11 +43,18 @@
             <div class="progress-bar" id="progress-bar"></div>
         </div>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('web_form_store') }}">
             @csrf
-            {{-- <input type="hidden" name="logo_type" id="logoType" value=""> --}}
-
-
 
             <!-- Step 1 -->
             <div class="form-step active">
@@ -55,7 +62,10 @@
                     identity:*</p>
                 <p class="subtext">i.e. Art dealer in Switzerland</p>
                 <input id="stape_1" name="stape_1" type="text" placeholder="Type your answer here..."
-                    class="form-control_custom mb-3" />
+                    class="form-control_custom mb-3" value="{{ old('stape_1') }}" required />
+                @error('stape_1')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -68,7 +78,10 @@
                     your future website:</p>
                 <p class="subtext">i.e. Home, About, Service, Gallery, Contact</p>
                 <input type="text" id="company_description" class="form-control_custom" name="company_description"
-                    placeholder="Type your answer here..." />
+                    placeholder="Type your answer here..." value="{{ old('company_description') }}" />
+                @error('company_description')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -76,7 +89,6 @@
 
             <!-- Step 3 -->
             <div class="form-step">
-                <input type="hidden" id="selected-font" name="selected_font">
                 <p><span class="step-number">3 →</span> If you had to choose one of these fonts, which would you
                     choose?
                 </p>
@@ -90,7 +102,7 @@
                             </div>
                             <div class="mt-2">Audio</div>
                             <input type="checkbox" name="font_selection[]" value="audio"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -100,7 +112,7 @@
                             </div>
                             <div class="mt-2">Video</div>
                             <input type="checkbox" name="font_selection[]" value="vedio"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -110,7 +122,7 @@
                             </div>
                             <div class="mt-2">Picture Gallery</div>
                             <input type="checkbox" name="font_selection[]" value="picture_gallery"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -120,7 +132,7 @@
                             </div>
                             <div class="mt-2">Animation</div>
                             <input type="checkbox" name="font_selection[]" value="animation"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -130,7 +142,7 @@
                             </div>
                             <div class="mt-2">Blog</div>
                             <input type="checkbox" name="font_selection[]" value="blog"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -140,7 +152,7 @@
                             </div>
                             <div class="mt-2">Online Shop</div>
                             <input type="checkbox" name="font_selection[]" value="online_shop"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -150,7 +162,7 @@
                             </div>
                             <div class="mt-2">Client Login</div>
                             <input type="checkbox" name="font_selection[]" value="client_logo"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                     <div class="col-md-3 mb-3">
@@ -160,10 +172,13 @@
                             </div>
                             <div class="mt-2">Other</div>
                             <input type="checkbox" name="font_selection[]" value="other"
-                                class="font-selection-checkbox d-none">
+                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
                         </div>
                     </div>
                 </div>
+                @error('font_selection')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -175,7 +190,10 @@
                     like:*</p>
                 <p class="subtext">i.e. http://www.apple.com, http://www.nike.com</p>
                 <input id="stape_4" name="stape_4" type="text" placeholder="Type your answer here..."
-                    class="form-control_custom mb-3" />
+                    class="form-control_custom mb-3" value="{{ old('stape_4') }}" />
+                @error('stape_4')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -223,6 +241,9 @@
                         </label>
                     </div>
                 </div>
+                @error('source_5')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <p class="subtext">Shift + Enter to make a line break</p>
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
@@ -277,6 +298,9 @@
                         </label>
                     </div>
                 </div>
+                @error('source_6')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <p class="subtext">Shift + Enter to make a line break</p>
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
@@ -327,6 +351,9 @@
                     </div>
 
                 </div>
+                @error('source_7')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <p class="subtext">Shift + Enter to make a line break</p>
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
@@ -338,7 +365,6 @@
 
             <!-- Step 8 -->
             <div class="form-step">
-                <input type="hidden" id="additional-need" name="additional_need[]">
                 <p><span class="step-number">8 →</span> Additional needs (Optional):</p>
                 <p class="subtext">Choose as many as you like.</p>
                 <div class="row">
@@ -417,17 +443,15 @@
                         </div>
                     </div>
 
-
-
-
                     <!-- Add more options as needed -->
                 </div>
+                @error('additional_needs')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"><span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
-
-
 
             <!-- Step 9 -->
             <div class="form-step">
@@ -465,6 +489,9 @@
                         </label>
                     </div>
                 </div>
+                @error('source_9')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <p class="subtext">Shift + Enter to make a line break</p>
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
@@ -480,33 +507,48 @@
                 <div class="mb-5">
                     <label for="first-name" class="form-label">First name *</label>
                     <input type="text" class="form-control_custom" id="first-name" name="first_name"
-                        placeholder="Jane" />
+                        placeholder="Jane" value="{{ old('first_name') }}" required />
                     <hr />
                 </div>
+                @error('first_name')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-5">
                     <label for="last-name" class="form-label">Last name *</label>
                     <input type="text" class="form-control_custom" id="last-name" name="last_name"
-                        placeholder="Smith" />
+                        placeholder="Smith" value="{{ old('last_name') }}" />
                     <hr />
                 </div>
+                @error('last_name')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-5">
                     <label for="phone_number" class="form-label">Phone number *</label>
                     <input type="text" class="form-control_custom" id="phone_number" name="phone_number"
-                        placeholder="01701005060" />
+                        placeholder="01701005060" value="{{ old('phone_number') }}" />
                     <hr />
                 </div>
+                @error('phone_number')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-5">
                     <label for="email" class="form-label">Email *</label>
                     <input type="text" class="form-control_custom" id="email" name="email"
-                        placeholder="name@example.com" />
+                        placeholder="name@example.com" value="{{ old('email') }}" />
                     <hr />
                 </div>
+                @error('email')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <div class="mb-5">
                     <label for="company" class="form-label">Company</label>
                     <input type="text" class="form-control_custom" id="company" name="company"
-                        placeholder="Acme Corporation" />
+                        placeholder="Acme Corporation" value="{{ old('company') }}" />
                     <hr />
                 </div>
+                @error('company')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="submit" class="btn btn-primary">Submit</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -522,7 +564,6 @@
             const progressBar = $('#progress-bar');
             const logoType = $('#logoType');
             const selectedFontInput = $('#selected-font');
-            // const selectedAdditionalNeed = $('#additional-need');
             const selectedAdditionalNeedInput = $('#additional-need');
 
             function updateProgressBar() {
@@ -583,12 +624,6 @@
                 }
             });
 
-            // Font selection click handler (for Step 2)
-            // $('.font-selection').click(function() {
-            //     const selectedFont = $(this).data('value');
-            //     selectedFontInput.val(selectedFont);
-            //     $(this).toggleClass('selected');
-            // });
 
             // Logo type selection click handler (for Step 1)
             $('.logo-type-selection').click(function() {
