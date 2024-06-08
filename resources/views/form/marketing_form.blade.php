@@ -53,19 +53,153 @@
             </div>
         @endif
 
-        <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('web_form_store') }}">
+        <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('marketing_form_store') }}">
             @csrf
 
-
-            {{-- <input type="hidden" name="type" value="web_form"> --}}
-            <!-- Step 1 -->
+             {{-- Step 1 --}}
             <div class="form-step active">
-                <p><span class="step-number">1 →</span> Describe your company or
-                    identity:*</p>
-                <p class="subtext">i.e. Art dealer in Switzerland</p>
-                <input id="stape_1" name="stape_1" type="text" placeholder="Type your answer here..."
-                    class="form-control_custom mb-3" value="{{ old('stape_1') }}" required />
-                @error('stape_1')
+                <p><span class="step-number">1 →</span> Which online marketing platform or service would you require for
+                    your campaign:This question is required.*</p>
+                <p class="subtext">Choose as many as you like</p>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="symbol">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_7.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Facebook Page</div>
+                            <input type="checkbox" name="logo_type[]" value="symbol_base_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Google My Business</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">YouTube Channel</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Instagram</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">
+                                Twitter Profile</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Blog</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">
+                                Google Ads</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Facebook Ads</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Search Engine Optimization (SEO)</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Newsletter</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Banners Ads</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card text-center logo-type-selection" data-value="text">
+                            <div class="icon">
+                                <img src="{{ asset('assets/fontend/form_img/default_8.png') }}" alt="img" />
+                            </div>
+                            <div class="mt-2">Other</div>
+                            <input type="checkbox" name="logo_type[]" value="text_based_logo"
+                                class="logo-type-selection-checkbox d-none">
+                        </div>
+                    </div>
+                </div>
+                @error('logo_type')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+                <button type="button" class="next btn btn-primary">Ok</button>
+            </div>
+
+
+           {{-- Step 2  --}}
+            <div class="form-step">
+                <p><span class="step-number">2 →</span> What is the goal of your online marketing campaign:This
+                    question is required.*</p>
+                <p class="subtext">i.e. Promote our new website</p>
+                <input type="text" id="marketing_goal" class="form-control_custom" name="marketing_goal"
+                    placeholder="Type your answer here..." value="{{ old('marketing_goal') }}" />
+                @error('marketing_goal')
                     <div class="text-danger">{{ $message }}</div>
                 @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
@@ -73,14 +207,14 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-
-            <!-- Step 2 -->
+           {{-- step --}}
             <div class="form-step">
-                <p><span class="step-number">2 →</span> List the buttons / pages of
-                    your future website:</p>
-                <p class="subtext">i.e. Home, About, Service, Gallery, Contact</p>
-                <input type="text" id="company_description" class="form-control_custom" name="company_description"
-                    placeholder="Type your answer here..." value="{{ old('company_description') }}" />
+                <p><span class="step-number">3 →</span> Describe your company or identity:This question is required.*
+                </p>
+                <p class="subtext">i.e. Art dealer from Switzerland</p>
+                <input type="text" id="company_description" class="form-control_custom"
+                    name="company_description" placeholder="Type your answer here..."
+                    value="{{ old('company_description') }}" />
                 @error('company_description')
                     <div class="text-danger">{{ $message }}</div>
                 @enderror
@@ -89,123 +223,15 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-            <!-- Step 3 -->
-            <div class="form-step">
-                <p><span class="step-number">3 →</span> If you had to choose one of these fonts, which would you
-                    choose?
-                </p>
-                <p class="subtext">Note: We will not actually use the following fonts to create your logo. It's just
-                    another great way to identify the design direction.</p>
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="classic">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_9.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Audio</div>
-                            <input type="checkbox" name="font_selection[]" value="audio"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="serif">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_10.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Video</div>
-                            <input type="checkbox" name="font_selection[]" value="vedio"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="rounded">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_11.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Picture Gallery</div>
-                            <input type="checkbox" name="font_selection[]" value="picture_gallery"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="modern">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_12.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Animation</div>
-                            <input type="checkbox" name="font_selection[]" value="animation"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="modern">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_12.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Blog</div>
-                            <input type="checkbox" name="font_selection[]" value="blog"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="modern">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_12.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Online Shop</div>
-                            <input type="checkbox" name="font_selection[]" value="online_shop"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="modern">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_12.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Client Login</div>
-                            <input type="checkbox" name="font_selection[]" value="client_logo"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <div class="card text-center font-selection" data-value="modern">
-                            <div class="icon">
-                                <img src="{{ asset('assets/fontend/form_img/default_12.png') }}" alt="img" />
-                            </div>
-                            <div class="mt-2">Other</div>
-                            <input type="checkbox" name="font_selection[]" value="other"
-                                class="font-selection-checkbox d-none" value="{{ old('font_selection[]') }}">
-                        </div>
-                    </div>
-                </div>
-                @error('font_selection')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-                <button type="button" class="next btn btn-primary">Ok</button>
-                <button type="button" class="previous btn btn-secondary"> <span><i
-                            class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
+
+
+
+
 
             <!-- Step 4 -->
             <div class="form-step">
-                <p><span class="step-number">4 →</span> Make a list of websites you
-                    like:*</p>
-                <p class="subtext">i.e. http://www.apple.com, http://www.nike.com</p>
-                <input id="stape_4" name="stape_4" type="text" placeholder="Type your answer here..."
-                    class="form-control_custom mb-3" value="{{ old('stape_4') }}" />
-                @error('stape_4')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-                <button type="button" class="next btn btn-primary">Ok</button>
-                <button type="button" class="previous btn btn-secondary"> <span><i
-                            class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
-
-
-            <!-- Step 5 -->
-            <div class="form-step">
                 <p>
-                    <span class="step-number">5 →</span> How many languages should your
+                    <span class="step-number">4 →</span> How many languages should your
                     website supportThis question is required.*
                 </p>
                 <p class="subtext">
@@ -214,39 +240,37 @@
                 <div class="options_5 row">
                     <div class="col-md-3 option_5">
                         <label class="m-0">
-                            <input type="checkbox" name="source_5[]" value="English" />
-                            <span>A</span> English
+                            <input type="checkbox" name="source_4[]" value="Yes" />
+                            <span>Y</span> Yes
                         </label>
                     </div>
                     <div class="col-md-3 option_5">
                         <label class="m-0">
-                            <input type="checkbox" name="source_5[]" value="German" />
-                            <span>B</span> German
+                            <input type="checkbox" name="source_4[]" value="No" />
+                            <span>N</span> No
                         </label>
                     </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_5[]" value="French" />
-                            <span>C</span> French
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_5[]" value="Italian" />
-                            <span>D</span> Italian
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_5[]" value="Other" />
-                            <span>E</span> Other
-                        </label>
-                    </div>
+
                 </div>
-                @error('source_5')
+                @error('source_4')
                     <div class="text-danger">{{ $message }}</div>
                 @enderror
                 <p class="subtext">Shift + Enter to make a line break</p>
+                <button type="button" class="next btn btn-primary">Ok</button>
+                <button type="button" class="previous btn btn-secondary"> <span><i
+                            class="fa-solid fa-chevron-up"></i></span></button>
+            </div>
+
+
+            <!-- Step 5 -->
+            <div class="form-step">
+                <p><span class="step-number">5 →</span> Additional Information (Optional):</p>
+                <p class="subtext">i.e. Home, About, Service, Gallery, Contact</p>
+                <input type="text" id="source_5[]" class="form-control_custom" name="source_5"
+                    placeholder="Type your answer here..." value="{{ old('source_5') }}" />
+                @error('source_5')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
@@ -255,119 +279,7 @@
 
             <!-- Step 6 -->
             <div class="form-step">
-                <p>
-                    <span class="step-number">6 →</span> Time frame to complete
-                    project:This question is required.*
-                </p>
-                <p class="subtext">
-                    Choose as many as you like
-                </p>
-                <div class="options_5 row">
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="1-2 Weeks" />
-                            <span>A</span> 1-2 Weeks
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="2-3 Weeks" />
-                            <span>B</span> 2-3 Weeks
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="4-5 Weeks" />
-                            <span>C</span> 4-5 Weeks
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="5-6 Weeks" />
-                            <span>D</span> 5-6 Weeks
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="7-8 Weeks" />
-                            <span>E</span> 7-8 Weeks
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_6[]" value="10+ Weeks" />
-                            <span>F</span> 10+ Weeks
-                        </label>
-                    </div>
-                </div>
-                @error('source_6')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-                <p class="subtext">Shift + Enter to make a line break</p>
-                <button type="button" class="next btn btn-primary">Ok</button>
-                <button type="button" class="previous btn btn-secondary"> <span><i
-                            class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
-
-
-            <!-- Step 7 -->
-            <div class="form-step">
-                <p>
-                    <span class="step-number">7 →</span> What is your budget for this
-                    project:This question is required.*
-                </p>
-                <p class="subtext">
-                    How much do you plan to dedicate to this project? If you're unsure,
-                    please mention a rough figure.
-                </p>
-                <div class="options_5 row">
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_7[]" value="5'000-7'000" />
-                            <span>A</span> 5'000-7'000
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_7[]" value="7'000-10'000" />
-                            <span>B</span> 7'000-10'000
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_7[]" value="10'000-20'000" />
-                            <span>C</span> 10'000-20'000
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_7[]" value="20'000-50'000" />
-                            <span>D</span> 20'000-50'000
-                        </label>
-                    </div>
-                    <div class="col-md-3 option_5">
-                        <label class="m-0">
-                            <input type="checkbox" name="source_7[]" value="100'000+" />
-                            <span>E</span> 100'000+
-                        </label>
-                    </div>
-
-                </div>
-                @error('source_7')
-                    <div class="text-danger">{{ $message }}</div>
-                @enderror
-                <p class="subtext">Shift + Enter to make a line break</p>
-                <button type="button" class="next btn btn-primary">Ok</button>
-                <button type="button" class="previous btn btn-secondary"> <span><i
-                            class="fa-solid fa-chevron-up"></i></span></button>
-            </div>
-
-
-
-
-            <!-- Step 8 -->
-            <div class="form-step">
-                <p><span class="step-number">8 →</span> Additional needs (Optional):</p>
+                <p><span class="step-number">6 →</span> Additional needs (Optional):</p>
                 <p class="subtext">Choose as many as you like.</p>
                 <div class="row">
                     <div class="col-md-3 mb-3">
@@ -452,6 +364,118 @@
                 @enderror
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"><span><i
+                            class="fa-solid fa-chevron-up"></i></span></button>
+            </div>
+
+
+            <!-- Step 7 -->
+            <div class="form-step">
+                <p>
+                    <span class="step-number">7 →</span> Time frame to complete
+                    project:This question is required.*
+                </p>
+                <p class="subtext">
+                    Choose as many as you like
+                </p>
+                <div class="options_5 row">
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="1-2 Weeks" />
+                            <span>A</span> 1-2 Weeks
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="2-3 Weeks" />
+                            <span>B</span> 2-3 Weeks
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="4-5 Weeks" />
+                            <span>C</span> 4-5 Weeks
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="5-6 Weeks" />
+                            <span>D</span> 5-6 Weeks
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="7-8 Weeks" />
+                            <span>E</span> 7-8 Weeks
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_6[]" value="10+ Weeks" />
+                            <span>F</span> 10+ Weeks
+                        </label>
+                    </div>
+                </div>
+                @error('source_6')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+                <p class="subtext">Shift + Enter to make a line break</p>
+                <button type="button" class="next btn btn-primary">Ok</button>
+                <button type="button" class="previous btn btn-secondary"> <span><i
+                            class="fa-solid fa-chevron-up"></i></span></button>
+            </div>>
+
+
+
+
+            <!-- Step 8 -->
+            <div class="form-step">
+                <p>
+                    <span class="step-number">8 →</span> What is your budget for this
+                    project:This question is required.*
+                </p>
+                <p class="subtext">
+                    How much do you plan to dedicate to this project? If you're unsure,
+                    please mention a rough figure.
+                </p>
+                <div class="options_5 row">
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7[]" value="5'000-7'000" />
+                            <span>A</span> 5'000-7'000
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7[]" value="7'000-10'000" />
+                            <span>B</span> 7'000-10'000
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7[]" value="10'000-20'000" />
+                            <span>C</span> 10'000-20'000
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7[]" value="20'000-50'000" />
+                            <span>D</span> 20'000-50'000
+                        </label>
+                    </div>
+                    <div class="col-md-3 option_5">
+                        <label class="m-0">
+                            <input type="checkbox" name="source_7[]" value="100'000+" />
+                            <span>E</span> 100'000+
+                        </label>
+                    </div>
+
+                </div>
+                @error('source_7')
+                    <div class="text-danger">{{ $message }}</div>
+                @enderror
+                <p class="subtext">Shift + Enter to make a line break</p>
+                <button type="button" class="next btn btn-primary">Ok</button>
+                <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
@@ -629,9 +653,10 @@
 
             // Logo type selection click handler (for Step 1)
             $('.logo-type-selection').click(function() {
-                const selectedLogoType = $(this).data('value');
-                $('input[name="logo_type"]').val(selectedLogoType);
+                const checkbox = $(this).find('.logo-type-selection-checkbox');
+                checkbox.prop('checked', !checkbox.prop('checked'));
                 $(this).toggleClass('selected');
+                // updateAdditionalNeed();
             });
 
             // Additional needs selection click handler (for Step 8)

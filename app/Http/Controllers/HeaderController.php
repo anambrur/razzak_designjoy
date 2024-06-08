@@ -14,6 +14,7 @@ class HeaderController extends Controller
     public function index()
     {
         $header = Header::latest()->first();
+        // dd($header);
         return view('admin.header.logo', compact('header'));
     }
 

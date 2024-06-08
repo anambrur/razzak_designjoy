@@ -71,6 +71,10 @@ class FormController extends Controller
     {
         return view('form.logo_form');
     }
+    public function marketing_form()
+    {
+        return view('form.marketing_form');
+    }
     public function logo_form_store(Request $request)
     {
         $validated = $request->validate([
@@ -93,6 +97,31 @@ class FormController extends Controller
     }
     public function web_form_store(Request $request)
     {
+        // dd($request->all());
+        $validated = $request->validate([
+            'stape_1' => 'required|string|max:255',
+            'company_description' => 'required|string|max:255',
+            'font_selection' => 'required|array',
+            'stape_4' => 'required|string|max:255',
+            'source_5' => 'required|array',
+            'source_6' => 'required|array',
+            'source_7' => 'required|array',
+            'additional_needs' => 'required|array',
+            'source_9' => 'required|array',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'phone_number' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'company' => 'nullable|string|max:255',
+        ]);
+
+        Form::create($validated);
+        return view('homeView');
+    }
+    public function marketing_form_store(Request $request)
+    {
+        dd($request->all());
+
         $validated = $request->validate([
             'stape_1' => 'required|string|max:255',
             'company_description' => 'required|string|max:255',

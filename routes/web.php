@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'homeView']);
 Route::get('/web_form', [FormController::class,'web_form'])->name('web_form');
 Route::get('/logo_form', [FormController::class,'logo_form'])->name('logo_form');
+Route::get('/marketing_form', [FormController::class,'marketing_form'])->name('marketing_form');
+
+//store
 Route::post('/logo_form_store', [FormController::class,'logo_form_store'])->name('logo_form_store');
 Route::post('/web_form_store', [FormController::class,'web_form_store'])->name('web_form_store');
+Route::post('/marketing_form_store', [FormController::class,'marketing_form_store'])->name('marketing_form_store');
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -41,24 +45,3 @@ require __DIR__ . '/auth.php';
 
 
 
-// class FormController extends Controller
-// {
-//     public function web_form()
-//     {
-//         return view('form.web_form');
-//     }
-//     public function logo_form()
-//     {
-//         return view('form.logo_form');
-//     }
-//     public function logo_form_store(Request $request)
-//     {
-//         dd($request->all());
-//         return view('form.logo_form');
-//     }
-//     public function web_form_store(Request $request)
-//     {
-//         dd($request->all());
-//         return view('form.logo_form');
-//     }
-// }

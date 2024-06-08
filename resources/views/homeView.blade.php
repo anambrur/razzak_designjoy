@@ -50,7 +50,7 @@
                 data-animation-type="lottie" data-src="./assets/fontend/json/animation.json" data-loop="0" data-direction="1"
                 data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307" data-duration="0">
             </div>
-            <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt="" class="image-84" />
+            {{-- <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt="" class="image-84" /> --}}
         </a>
     </div>
     <div class="site-wrapper">
@@ -1080,7 +1080,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{route('marketing_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1153,7 +1153,7 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{route('marketing_form')}}" class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1227,7 +1227,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="{{route('logo_form')}}"
+                                                        style="opacity: 0" href="{{route('marketing_form')}}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
+            $table->string('type')->nullable();
             $table->string('stape_1')->nullable();
             $table->string('company_description')->nullable();
             $table->json('font_selection')->nullable();
@@ -31,6 +32,9 @@ return new class extends Migration
             $table->json('logo_type')->nullable();
             $table->string('websites')->nullable();
             $table->string('details')->nullable();
+
+            $table->string('marketing_goal')->nullable();
+            $table->json('source_4')->nullable();
             $table->timestamps();
         });
     }
