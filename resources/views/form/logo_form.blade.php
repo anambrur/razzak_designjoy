@@ -45,6 +45,8 @@
 
         <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('logo_form_store') }}">
             @csrf
+
+            <input type="hidden" name="form_type" value="logo_form">
             <!-- Step 1 -->
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> What are the components you require for the planned logo?</p>

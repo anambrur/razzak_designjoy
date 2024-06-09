@@ -13,6 +13,6 @@ class HeaderSeeder extends Seeder
      */
     public function run(): void
     {
-        Header::create(['logo'=>'asset/fontend/svg/logo.svg','title'=>'A design agency with a twist','secondary_title'=>'Design subscriptions for everyone. Pause or cancel anytime.']);
+        Header::create(['logo'=>'assets/fontend/img/logo.svg','title'=>'A design agency with a twist','secondary_title'=>'Design subscriptions for everyone. Pause or cancel anytime.']);
     }
 }

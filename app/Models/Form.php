@@ -11,7 +11,7 @@ class Form extends Model
     protected $fillable = [
         'stape_1', 'company_description', 'font_selection', 'stape_4',
         'source_5', 'source_6', 'source_7', 'additional_needs',
-        'source_9', 'first_name', 'last_name', 'phone_number', 'email', 'company','websites','details'
+        'source_9', 'first_name', 'last_name', 'phone_number', 'email', 'company','websites','details','form_type'
     ];
 
     protected $casts = [

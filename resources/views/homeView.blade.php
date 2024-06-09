@@ -50,7 +50,7 @@
                 data-animation-type="lottie" data-src="./assets/fontend/json/animation.json" data-loop="0" data-direction="1"
                 data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307" data-duration="0">
             </div>
-            {{-- <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt="" class="image-84" /> --}}
+            <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt="" class="image-84" />
         </a>
     </div>
     <div class="site-wrapper">

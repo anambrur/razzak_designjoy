@@ -4,19 +4,19 @@
         <!-- Dark Logo-->
         <a href="index.html" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="{{asset('assets/fontend/svg/logo.svg')}}" alt="" height="33">
+                <img src="{{ asset('assets/fontend/svg/logo.svg') }}" alt="" height="33">
             </span>
             <span class="logo-lg">
-                <img src="{{asset('assets/fontend/svg/logo.svg')}}" alt="" height="40">
+                <img src="{{ asset('assets/fontend/svg/logo.svg') }}" alt="" height="40">
             </span>
         </a>
         <!-- Light Logo-->
         <a href="index.html" class="logo logo-light">
             <span class="logo-sm">
-                <img src="{{asset('assets/fontend/svg/logo.svg')}}" alt="" height="33">
+                <img src="{{ asset('assets/fontend/svg/logo.svg') }}" alt="" height="33">
             </span>
             <span class="logo-lg">
-                <img src="{{asset('assets/fontend/svg/logo.svg')}}" alt="" height="40">
+                <img src="{{ asset('assets/fontend/svg/logo.svg') }}" alt="" height="40">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -40,17 +40,47 @@
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('header.index')}}" class="nav-link" data-key="t-analytics">
+                                <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
                                     Logo </a>
                             </li>
                             <li class="nav-item">
-                                <a href="dashboard-analytics.html" class="nav-link" data-key="t-analytics">
-                                    rtrtrtr </a>
+                                <a href="#" class="nav-link" data-key="t-analytics">
+                                    test </a>
                             </li>
 
                         </ul>
                     </div>
                 </li> <!-- end Dashboard Menu -->
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarForm" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="sidebarForm">
+                        <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Form Data</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarForm">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ route('web_form_data') }}" class="nav-link" data-key="t-analytics">
+                                    Web Form </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
+                                    Logo Form </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
+                                    MArketing Form </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </li> <!-- end Dashboard Menu -->
+
+
+
+                
+
+
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button"
                         aria-expanded="false" aria-controls="sidebarApps">

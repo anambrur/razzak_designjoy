@@ -6,12 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-
-Route::get('/', [HomeController::class, 'homeView']);
+Route::get('/', [HomeController::class, 'homeView'])->name('homeView');
 Route::get('/web_form', [FormController::class,'web_form'])->name('web_form');
 Route::get('/logo_form', [FormController::class,'logo_form'])->name('logo_form');
 Route::get('/marketing_form', [FormController::class,'marketing_form'])->name('marketing_form');
@@ -27,8 +23,11 @@ Route::get('/dashboard', function () {
 
 
 
+
+//////backend
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('/header', HeaderController::class)->names('header');
+    Route::get('/web_form_data',[FormController::class,'web_form_data'])->name('web_form_data');
     
 });
 

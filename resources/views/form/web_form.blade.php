@@ -57,7 +57,7 @@
             @csrf
 
 
-            {{-- <input type="hidden" name="type" value="web_form"> --}}
+            <input type="hidden" name="form_type" value="web_form">
             <!-- Step 1 -->
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> Describe your company or

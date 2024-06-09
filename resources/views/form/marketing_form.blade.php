@@ -55,7 +55,7 @@
 
         <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('marketing_form_store') }}">
             @csrf
-
+            <input type="hidden" name="form_type" value="marketing_form">
              {{-- Step 1 --}}
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> Which online marketing platform or service would you require for
