@@ -88,4 +88,10 @@ class HeaderController extends Controller
     {
         //
     }
+
+    //////
+    public function booking(Request $request)
+    {
+        return view('admin.header.booking');
+    }
 }

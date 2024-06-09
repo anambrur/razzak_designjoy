@@ -600,7 +600,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/15-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -673,7 +673,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -747,7 +747,7 @@
                                                 </div>
                                                 <div class="text-block-5">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -845,7 +845,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -918,7 +918,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -992,7 +992,7 @@
                                                 </div>
                                                 <div class="text-block-5">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1087,7 +1087,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1160,7 +1160,7 @@
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="#" target="_blank" class="link-2">book a call</a>
+                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1875,7 +1875,7 @@
                             your team can change the way you source design, forever.
                         </p>
                         <div class="button__wrapper m-t-40">
-                            <a data-w-id="224d725d-e235-14d1-b9e1-a551fd064e72" style="opacity: 0" href="#"
+                            <a data-w-id="224d725d-e235-14d1-b9e1-a551fd064e72" style="opacity: 0" href="https://tidycal.com/sarkeribrahim/30-minute-meeting"
                                 target="_blank" class="button w-inline-block">
                                 <div>Book a call</div>
                             </a>

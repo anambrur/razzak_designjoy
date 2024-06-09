@@ -1,6 +1,6 @@
 @extends('admin.layout')
 @section('title')
-    Web | Form
+    Logo | Form
 @endsection
 
 @section('content')
@@ -12,14 +12,12 @@
                     <table id="example" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Company Name</th>
+                                <th>Logo Type</th>
                                 <th>Button List</th>
                                 <th>Font</th>
                                 <th>Websites</th>
-                                <th>Language</th>
-                                <th>Budget</th>
-                                <th>Additional needs</th>
                                 <th>Hear About us</th>
+                                <th>Additional needs</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Phone Number</th>
@@ -28,17 +26,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($web_form as $w)
+                            @foreach ($logo_form as $w)
                                 <tr>
                                     <td>{{ $w['stape_1'] ?? 'N/A' }}</td>
                                     <td>{{ $w['company_description'] ?? 'N/A' }}</td>
                                     <td>{{ implode(', ', $w['font_selection'] ?? []) }}</td>
-                                    <td>{{ $w['stape_4'] ?? 'N/A' }}</td>
-                                    <td>{{ implode(', ', $w['source_5'] ?? []) }}</td>
-                                    <td>{{ implode(', ', $w['source_6'] ?? []) }}</td>
+                                    <td>{{ $w['websites'] ?? 'N/A' }}</td>
                                     <td>{{ implode(', ', $w['source_7'] ?? []) }}</td>
                                     <td>{{ implode(', ', $w['additional_needs'] ?? []) }}</td>
-                                    <td>{{ implode(', ', $w['source_9'] ?? []) }}</td>
                                     <td>{{ $w['first_name'] ?? 'N/A' }}</td>
                                     <td>{{ $w['last_name'] ?? 'N/A' }}</td>
                                     <td>{{ $w['phone_number'] ?? 'N/A' }}</td>
@@ -49,15 +44,12 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Company Name</th>
+                                <th>Logo Type</th>
                                 <th>Button List</th>
                                 <th>Font</th>
                                 <th>Websites</th>
-                                <th>Language</th>
-                                <th>Time frame</th>
-                                <th>Budget</th>
-                                <th>Additional needs</th>
                                 <th>Hear About us</th>
+                                <th>Additional needs</th>
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Phone Number</th>

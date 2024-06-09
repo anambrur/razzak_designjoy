@@ -43,10 +43,10 @@
                                 <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
                                     Logo </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link" data-key="t-analytics">
-                                    test </a>
-                            </li>
+                            {{-- <li class="nav-item">
+                                <a href="{{ route('booking') }}" class="nav-link" data-key="t-analytics">
+                                    Booking Link</a>
+                            </li> --}}
 
                         </ul>
                     </div>
@@ -63,21 +63,23 @@
                                     Web Form </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
+                                <a href="{{ route('logo_form_data') }}" class="nav-link" data-key="t-analytics">
                                     Logo Form </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
+                                <a href="{{ route('marketing_form_data') }}" class="nav-link" data-key="t-analytics">
                                     MArketing Form </a>
                             </li>
-
-
                         </ul>
                     </div>
                 </li> <!-- end Dashboard Menu -->
 
 
-
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('booking') }}">
+                        <i class="ri-honour-line"></i> <span data-key="t-widgets">Booking Link</span>
+                    </a>
+                </li>
                 
 
 

@@ -11,7 +11,7 @@ class Form extends Model
     protected $fillable = [
         'stape_1', 'company_description', 'font_selection', 'stape_4',
         'source_5', 'source_6', 'source_7', 'additional_needs',
-        'source_9', 'first_name', 'last_name', 'phone_number', 'email', 'company','websites','details','form_type'
+        'source_9', 'first_name', 'last_name', 'phone_number', 'email', 'company','websites','details','form_type','logo_type','marketing_goal','source_4'
     ];
 
     protected $casts = [
@@ -22,5 +22,6 @@ class Form extends Model
         'additional_needs' => 'array',
         'source_9' => 'array',
         'logo_type' => 'array',
+        'source_4' => 'array',
     ];
 }

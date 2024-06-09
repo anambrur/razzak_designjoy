@@ -231,11 +231,10 @@
             <!-- Step 4 -->
             <div class="form-step">
                 <p>
-                    <span class="step-number">4 →</span> How many languages should your
-                    website supportThis question is required.*
+                    <span class="step-number">4 →</span> Would your online marketing campaing require us to maintain or deliver content on regular basis?This question is required.*
                 </p>
                 <p class="subtext">
-                    Choose as many as you like
+                    i.e. Post daily on Facebook in your name, send out monthly newsletters in your name etc...
                 </p>
                 <div class="options_5 row">
                     <div class="col-md-3 option_5">

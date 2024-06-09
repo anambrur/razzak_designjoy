@@ -77,7 +77,7 @@ class FormController extends Controller
     }
     public function logo_form_store(Request $request)
     {
-
+        dd($request->all());
         $request->validate([
             'company_description' => 'required|string|max:255',
             'font_selection' => 'required|array',
@@ -98,6 +98,7 @@ class FormController extends Controller
     }
     public function web_form_store(Request $request)
     {
+        
         $request->validate([
             'form_type' => 'required|string|max:255',
             'stape_1' => 'required|string|max:255',
@@ -149,18 +150,20 @@ class FormController extends Controller
     {
         $web_form = Form::where('form_type', 'web_form')->get();
 
+
         return view('admin.form.web_form', compact('web_form'));
     }
     public function logo_form_data()
     {
 
         $logo_form = Form::where('form_type', 'logo_form')->get();
-
-        // return view('admin.form.form', compact('logo_form'));
+        
+        return view('admin.form.logo_form', compact('logo_form'));
     }
     public function marketing_form_data()
     {
         $marketing_form = Form::where('form_type', 'marketing_form')->get();
-        // return view('admin.form.form', compact('marketing_form'));
+        // dd($marketing_form);
+        return view('admin.form.marketing_form', compact('marketing_form'));
     }
 }

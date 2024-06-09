@@ -27,7 +27,12 @@ Route::get('/dashboard', function () {
 //////backend
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('/header', HeaderController::class)->names('header');
+    Route::get('/booking', [HeaderController::class,'booking'])->name('booking');
+
+    //form data
     Route::get('/web_form_data',[FormController::class,'web_form_data'])->name('web_form_data');
+    Route::get('/logo_form_data',[FormController::class,'logo_form_data'])->name('logo_form_data');
+    Route::get('/marketing_form_data',[FormController::class,'marketing_form_data'])->name('marketing_form_data');
     
 });
 
