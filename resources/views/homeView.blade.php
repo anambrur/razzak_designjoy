@@ -240,7 +240,7 @@
                             data-w-id="4d1357d3-311e-f62e-4900-aa7c1e085e49" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper subscrobe">
                                 <div class="arrows" data-w-id="6bec910e-5701-0711-8bae-6915e2385242"
-                                    data-animation-type="lottie" data-src="./assets/fontend/json/like.json" data-loop="1"
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Animation_hiw_1.json" data-loop="1"
                                     data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
                                     data-default-duration="2.7" data-duration="0"></div>
                             </div>
@@ -608,7 +608,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $4,995<span class="per-month">/m</span>
+                                                CHF 4'995<span class="per-month"></span>
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.

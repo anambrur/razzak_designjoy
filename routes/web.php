@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingLinkController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\HomeController;
@@ -8,14 +9,18 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'homeView'])->name('homeView');
-Route::get('/web_form', [FormController::class,'web_form'])->name('web_form');
-Route::get('/logo_form', [FormController::class,'logo_form'])->name('logo_form');
-Route::get('/marketing_form', [FormController::class,'marketing_form'])->name('marketing_form');
+Route::get('/web_form', [FormController::class, 'web_form'])->name('web_form');
+Route::get('/logo_form', [FormController::class, 'logo_form'])->name('logo_form');
+Route::get('/marketing_form', [FormController::class, 'marketing_form'])->name('marketing_form');
 
 //store
-Route::post('/logo_form_store', [FormController::class,'logo_form_store'])->name('logo_form_store');
-Route::post('/web_form_store', [FormController::class,'web_form_store'])->name('web_form_store');
-Route::post('/marketing_form_store', [FormController::class,'marketing_form_store'])->name('marketing_form_store');
+Route::post('/logo_form_store', [FormController::class, 'logo_form_store'])->name('logo_form_store');
+Route::post('/web_form_store', [FormController::class, 'web_form_store'])->name('web_form_store');
+
+
+Route::post('/admin/booking_link_store/{id}', [BookingLinkController::class, 'booking_link_store'])->name('booking_link_store');
+
+
 
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -27,13 +32,13 @@ Route::get('/dashboard', function () {
 //////backend
 Route::prefix('admin')->middleware('auth')->group(function () {
     Route::resource('/header', HeaderController::class)->names('header');
-    Route::get('/booking', [HeaderController::class,'booking'])->name('booking');
+    Route::get('/booking', [BookingLinkController::class, 'booking'])->name('booking');
+    Route::get('/booking_link_store/{id}', [BookingLinkController::class, 'booking_link_store'])->name('booking_link_store');
 
     //form data
-    Route::get('/web_form_data',[FormController::class,'web_form_data'])->name('web_form_data');
-    Route::get('/logo_form_data',[FormController::class,'logo_form_data'])->name('logo_form_data');
-    Route::get('/marketing_form_data',[FormController::class,'marketing_form_data'])->name('marketing_form_data');
-    
+    Route::get('/web_form_data', [FormController::class, 'web_form_data'])->name('web_form_data');
+    Route::get('/logo_form_data', [FormController::class, 'logo_form_data'])->name('logo_form_data');
+    Route::get('/marketing_form_data', [FormController::class, 'marketing_form_data'])->name('marketing_form_data');
 });
 
 
@@ -45,7 +50,3 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__ . '/auth.php';
-
-
-
-
