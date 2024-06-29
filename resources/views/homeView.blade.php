@@ -29,11 +29,11 @@
                 data-collapse="medium" style="opacity: 0" data-w-id="0666e8b8-d79e-edc1-51e9-c5e487526a92"
                 role="banner" data-duration="400">
                 <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                    <a href="index.html#hero" class="floating-nav__link arrow w-nav-link"></a><a href="index.html#hiw"
-                        class="floating-nav__link w-nav-link">How it works</a><a href="index.html#benefits"
-                        class="floating-nav__link w-nav-link">Benefits</a><a href="index.html#services"
-                        class="floating-nav__link w-nav-link">Services</a><a href="index.html#plans"
-                        class="floating-nav__link w-nav-link">Pricing</a><a href="index.html#faq"
+                    <a href="#hero" class="floating-nav__link arrow w-nav-link"></a><a href="#hiw"
+                        class="floating-nav__link w-nav-link">How it works</a><a href="#benefits"
+                        class="floating-nav__link w-nav-link">Benefits</a><a href="#services"
+                        class="floating-nav__link w-nav-link">Services</a><a href="#plans"
+                        class="floating-nav__link w-nav-link">Pricing</a><a href="#faq"
                         class="floating-nav__link w-nav-link">FAQs</a><a
                         href="https://billing.stripe.com/p/login/14keXT4Qa8wh5k4dQQ" ms-hide-element="true"
                         class="floating-nav__link login w-nav-link">Login</a>
@@ -47,8 +47,9 @@
     <div class="top-nav">
         <a href="index.html" class="nav__logo-wrapper w-inline-block">
             <div data-w-id="ef0dce1b-82c1-bc77-712b-47900aaaa1ab" data-is-ix2-target="1" class="lottie-animation-4"
-                data-animation-type="lottie" data-src="./assets/fontend/json/animation.json" data-loop="0" data-direction="1"
-                data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307" data-duration="0">
+                data-animation-type="lottie" data-src="./assets/fontend/json/animation.json" data-loop="0"
+                data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307"
+                data-duration="0">
             </div>
             <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt="" class="image-84" />
         </a>
@@ -63,8 +64,7 @@
                         </h1>
                         <p data-w-id="c50a6184-8e34-64d9-e902-7e44828e6215" style="opacity: 0" class="inline">
                             {{ $header->secondary_title }}
-                            {{-- -Is your big idea ready to go wild,
-                            <span class="text-span-2">Let's work together.</span> --}}
+
                         </p>
                         <div class="button__wrapper">
                             <a href="index.html#plans" data-w-id="c6288447-6c4a-d637-39e8-3980fec408ae"
@@ -83,8 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_1.svg" loading="lazy" data-w-id="b6b533bd-6d39-1760-75b0-7dddde4807d0"
-                    alt="" class="hero__shape-1" /><img src="./assets/fontend/svg/svg_2.svg" loading="lazy"
+                <img src="./assets/fontend/svg/svg_1.svg" loading="lazy"
+                    data-w-id="b6b533bd-6d39-1760-75b0-7dddde4807d0" alt="" class="hero__shape-1" /><img
+                    src="./assets/fontend/svg/Element 6.svg" loading="lazy"
                     data-w-id="7cf09021-c425-283c-6217-b3640a03411f" alt="" class="hero__shape-2" />
                 <div class="section--logo-marquee">
                     <div data-w-id="0019d883-cf8f-a8a3-c6d3-ee9730fe4092"
@@ -202,26 +203,13 @@
                 </div>
                 <div data-w-id="c75706e2-332b-24fb-e490-08229aecd2b2" style="opacity: 0"
                     class="hero__images-wrapper">
-                    <div class="hero__image-wrapper">
-                        <img src="./assets/fontend/img/Frame_1.png" loading="lazy" sizes="(max-width: 767px) 250px, 385px"
-                            alt="img" class="image-fill" />
-                    </div>
-                    <div class="hero__image-wrapper">
-                        <img src="./assets/fontend/img/Frame2.png" loading="lazy" sizes="(max-width: 767px) 250px, 385px"
-                            alt="img" class="image-fill" />
-                    </div>
-                    <div class="hero__image-wrapper">
-                        <img src="./assets/fontend/img/Fram_3.png" loading="lazy" sizes="(max-width: 767px) 250px, 385px"
-                            alt="img" class="image-fill" />
-                    </div>
-                    <div class="hero__image-wrapper">
-                        <img src="./assets/fontend/img/Frame_4.png" loading="lazy" sizes="(max-width: 767px) 250px, 385px"
-                            alt="img" class="image-fill" />
-                    </div>
-                    <div class="hero__image-wrapper">
-                        <img src="./assets/fontend/img/Frame_5.png" loading="lazy" sizes="(max-width: 767px) 250px, 385px"
-                            alt="img" class="image-fill" />
-                    </div>
+
+                    @foreach ($projectPhotos as $photo)
+                        <div class="hero__image-wrapper">
+                            <img src="{{ asset('storage/images/' . $photo->image) }}" loading="lazy"
+                                sizes="(max-width: 767px) 250px, 385px" alt="img" class="image-fill" />
+                        </div>
+                    @endforeach
                 </div>
             </div>
             <div id="hiw" class="hiw">
@@ -240,9 +228,9 @@
                             data-w-id="4d1357d3-311e-f62e-4900-aa7c1e085e49" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper subscrobe">
                                 <div class="arrows" data-w-id="6bec910e-5701-0711-8bae-6915e2385242"
-                                    data-animation-type="lottie" data-src="./assets/fontend/json/Animation_hiw_1.json" data-loop="1"
-                                    data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
-                                    data-default-duration="2.7" data-duration="0"></div>
+                                    data-animation-type="lottie" data-src="./assets/fontend/json/Animation_hiw_1.json"
+                                    data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
+                                    data-renderer="svg" data-default-duration="2.7" data-duration="0"></div>
                             </div>
                             <p class="p-small">
                                 Start with a simple consultation to understand your unique
@@ -283,10 +271,10 @@
                         </a>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_3.svg" loading="lazy" alt="" class="image-70" /><img
-                    src="./assets/fontend/svg/svg_4.svg" loading="lazy" alt="" class="image-71" />
+                <img src="./assets/fontend/svg/Element 12.svg" loading="lazy" alt="" class="image-70" /><img
+                    src="./assets/fontend/svg/Element 3.svg" loading="lazy" alt="" class="image-71" />
             </div>
-            
+
             <div id="benefits" class="quote">
                 <div class="container">
                     <div data-w-id="d4c86736-49ca-3423-8367-b5c1feda07ac" style="opacity: 0" class="bb__wrapper">
@@ -317,9 +305,10 @@
                             data-w-id="406f9178-bb63-55dc-8830-1bbb7db78049" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper flash">
                                 <div class="flash" data-w-id="082857b1-7d77-cde5-24d5-b791203ccf81"
-                                    data-animation-type="lottie" data-src="./assets/fontend/json/Member_ship_animation_2.json"
-                                    data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
-                                    data-renderer="svg" data-default-duration="3" data-duration="0"></div>
+                                    data-animation-type="lottie"
+                                    data-src="./assets/fontend/json/Member_ship_animation_2.json" data-loop="1"
+                                    data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                                    data-default-duration="3" data-duration="0"></div>
                             </div>
                             <h5 class="heading-3">Swift Delivery</h5>
                             <p class="p-small smaller">
@@ -372,9 +361,10 @@
                             data-w-id="5e890574-191e-4d00-5990-96837a4ca5b1" style="opacity: 0" class="hiw__column">
                             <div class="hiw__icon-wrapper finger">
                                 <div class="finger-lottie" data-w-id="5dcecfbb-59de-a57a-a473-ec6ad62d9f78"
-                                    data-animation-type="lottie" data-src="./assets/fontend/json/Member_ship_animation_6.json"
-                                    data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
-                                    data-renderer="svg" data-default-duration="10" data-duration="0"></div>
+                                    data-animation-type="lottie"
+                                    data-src="./assets/fontend/json/Member_ship_animation_6.json" data-loop="1"
+                                    data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                                    data-default-duration="10" data-duration="0"></div>
                             </div>
                             <h5 class="heading-3">Client Empowerment</h5>
                             <p class="p-small smaller">
@@ -383,8 +373,8 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_8.svg" loading="lazy" alt="" class="image-77" /><img
-                    src="./assets/fontend/svg/svg_9.svg" loading="lazy" alt="" class="image92" />
+                <img src="./assets/fontend/svg/Element 1.svg" loading="lazy" alt="" class="image-77" /><img
+                    src="./assets/fontend/svg/Element 11.svg" loading="lazy" alt="" class="image92" />
             </div>
             <div id="services" class="scop">
                 <div class="container">
@@ -432,19 +422,12 @@
                     </div>
                     <div data-w-id="9ad7e7ae-9d56-534a-1fa2-8365a6bf1706" style="opacity: 0" class="work__flex">
                         <div class="w-layout-grid grid-2">
-                            <img src="./assets/fontend/img/Frame_6.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" /><img src="./assets/fontend/img/Frame_7.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" /><img src="./assets/fontend/img/Frame_8.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" /><img src="./assets/fontend/img/Frame_9.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" /><img src="./assets/fontend/img/Frame_10.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" /><img src="./assets/fontend/img/Frame_11.png" loading="lazy"
-                                sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
-                                class="image-87" />
+
+                            @foreach ($projectPhotos as $photo)
+                                <img src="{{ asset('storage/images/' . $photo->image) }}" loading="lazy"
+                                    sizes="(max-width: 479px) 85vw, (max-width: 991px) 87vw, 88vw" alt=""
+                                    class="image-87" />
+                            @endforeach
                         </div>
                     </div>
                     <div class="button__wrapper _33">
@@ -454,8 +437,8 @@
                         </a>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_10.svg" loading="lazy" alt="" class="image-77" /><img
-                    src="./assets/fontend/svg/svg_11.svg" loading="lazy" alt="" class="image-78" />
+                <img src="./assets/fontend/svg/Element 7.svg" loading="lazy" alt="" class="image-77" /><img
+                    src="./assets/fontend/svg/Element 10.svg" loading="lazy" alt="" class="image-78" />
             </div>
 
             <!-- Membership section -->
@@ -486,11 +469,11 @@
                                 <h1 class="pricing__left-heading">Join<br />Designjoy</h1>
                             </div>
                             <div class="pricing__left-bottom">
-                                <a href="#" target="_blank"
+                                <a href="{{ $bookingLink }}" target="_blank"
                                     class="pricing__left-inside-card top w-inline-block">
                                     <div class="pricing__left-inside-card-left">
                                         <h5 class="pricing__left-card-small-heading">
-                                            Book a 15-min intro call
+                                            Book a 30-min intro call
                                         </h5>
                                         <p class="p-small smaller smallest m-b-0">
                                             Learn more about how DesignJoy works and how it can help
@@ -511,10 +494,13 @@
                                     <img src="./assets/fontend/svg/svg_12_arow.svg" loading="lazy" alt="" />
                                 </a>
                             </div>
-                            <img src="./assets/fontend/svg/svg_13.svg" loading="lazy" alt="" class="image-79" />
+                            <img src="./assets/fontend/svg/svg_13.svg" loading="lazy" alt=""
+                                class="image-79" />
                         </div>
+
                         <div data-w-id="215f8bbc-1d94-22cb-c472-3975de472baf" style="opacity: 0"
                             class="pricing__right-card">
+                            <a href="{{ route('index') }}">Payment</a>
                             <h4 class="heading-8">Web Design</h4>
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
@@ -535,7 +521,7 @@
                                     <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $2,995<span class="per-month">/m</span>
+                                                CHF {{ $price->web_basic }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -593,14 +579,18 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('web_form')}}" class="button w-inline-block">
+
+
+
+                                                    <a href="{{ route('web_form') }}" class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/15-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank" class="link-2">book
+                                                        a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -608,7 +598,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                CHF 4'995<span class="per-month"></span>
+                                                CHF {{ $price->web_standard }}<span class="per-month"></span>
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -666,14 +656,15 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('web_form')}}" class="button w-inline-block">
+                                                    <a href="{{ route('web_form') }}" class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -681,7 +672,7 @@
                                     <div data-w-tab="Tab 2" class="w-tab-pane">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $7,995<span class="per-month">/m</span>
+                                                CHF {{ $price->web_pro }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 Double the requests.
@@ -740,14 +731,15 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="{{route('web_form')}}"
+                                                        style="opacity: 0" href="{{ route('web_form') }}"
                                                         class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div class="text-block-5">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -780,7 +772,7 @@
                                     <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $2,995<span class="per-month">/m</span>
+                                                CHF {{ $price->logo_basic }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -838,14 +830,16 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{ route('logo_form') }}"
+                                                        class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -853,7 +847,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $4,995<span class="per-month">/m</span>
+                                                CHF {{ $price->logo_standard }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -911,14 +905,16 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('logo_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{ route('logo_form') }}"
+                                                        class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -926,7 +922,7 @@
                                     <div data-w-tab="Tab 2" class="w-tab-pane">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $7,995<span class="per-month">/m</span>
+                                                CHF {{ $price->logo_pro }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 Double the requests.
@@ -985,14 +981,15 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="{{route('logo_form')}}"
+                                                        style="opacity: 0" href="{{ route('logo_form') }}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div class="text-block-5">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1022,7 +1019,7 @@
                                     <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $2,995<span class="per-month">/m</span>
+                                                CHF {{ $price->marketing_basic }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1080,14 +1077,16 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('marketing_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{ route('marketing_form') }}"
+                                                        class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1095,7 +1094,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $4,995<span class="per-month">/m</span>
+                                                CHF {{ $price->marketing_standard }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1153,14 +1152,17 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{route('marketing_form')}}" class="button_custom w-inline-block">
+                                                    <a href="{{ route('marketing_form') }}"
+                                                        class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
                                                 <div data-w-id="3de1f8c9-ebe1-2a4d-4279-3259e26ea939"
                                                     style="opacity: 0" class="text-block-4">
                                                     or
-                                                    <a href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank" class="link-2">book a call</a>
+
+                                                    <a href="{{ $bookingLink }}" target="_blank"
+                                                        class="link-2">book a call</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1168,7 +1170,7 @@
                                     <div data-w-tab="Tab 2" class="w-tab-pane">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $7,995<span class="per-month">/m</span>
+                                                CHF {{ $price->marketing_pro }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 Double the requests.
@@ -1227,7 +1229,7 @@
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
                                                     <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
-                                                        style="opacity: 0" href="{{route('marketing_form')}}"
+                                                        style="opacity: 0" href="{{ route('marketing_form') }}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
@@ -1252,8 +1254,7 @@
                                     <a data-w-tab="Tab 3" class="tab_custom w-tab-link_custom w-tab-link">
                                         <div>Basic</div>
                                     </a>
-                                    <a data-w-tab="Tab 1"
-                                        class="tab_custom w-tab-link_custom w-tab-link w--current">
+                                    <a data-w-tab="Tab 1" class="tab_custom w-tab-link_custom w-tab-link w--current">
                                         <div>Standard</div>
                                     </a>
                                     <a data-w-tab="Tab 2" class="tab_custom w-tab-link_custom w-tab-link">
@@ -1266,7 +1267,7 @@
                                     <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $2,995<span class="per-month">/m</span>
+                                                CHF 2'995
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1340,7 +1341,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $4,995<span class="per-month">/m</span>
+                                                CHF 4'995
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1414,7 +1415,7 @@
                                     <div data-w-tab="Tab 2" class="w-tab-pane">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                $7,995<span class="per-month">/m</span>
+                                                CHF 7'995
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 Double the requests.
@@ -1790,9 +1791,10 @@
                         </div>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_17.svg" loading="lazy" alt="" class="image-78 _3" />
+                <img src="./assets/fontend/svg/Element 4.svg" loading="lazy" alt=""
+                    class="image-78 _3" />
             </div>
-            
+
             <div class="div-block-23">
                 <div class="scope-marquee">
                     <div data-w-id="35cebc9d-1e88-0a44-106b-b4c01a138ce0" style="opacity: 0"
@@ -1875,8 +1877,9 @@
                             your team can change the way you source design, forever.
                         </p>
                         <div class="button__wrapper m-t-40">
-                            <a data-w-id="224d725d-e235-14d1-b9e1-a551fd064e72" style="opacity: 0" href="https://tidycal.com/sarkeribrahim/30-minute-meeting"
-                                target="_blank" class="button w-inline-block">
+                            <a data-w-id="224d725d-e235-14d1-b9e1-a551fd064e72" style="opacity: 0"
+                                href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank"
+                                class="button w-inline-block">
                                 <div>Book a call</div>
                             </a>
                         </div>
@@ -1887,7 +1890,8 @@
                             data-src="./assets/fontend/json/footer_logo.json" data-loop="0" data-direction="1"
                             data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307"
                             data-duration="0"></div>
-                        <img src="./assets/fontend/svg/logo.svg" loading="lazy" alt="" class="footer__text" />
+                        <img src="./assets/fontend/svg/logo.svg" loading="lazy" alt=""
+                            class="footer__text" />
                     </a>
                     <div data-w-id="6e593d98-4d75-1f2e-ea69-5280f09c1dbd" style="opacity: 0" class="div-block-22">
                         <a href="#" target="_blank" class="link">Latest projects</a><a
@@ -1898,8 +1902,9 @@
                             target="_blank" class="link">Privacy policy</a>
                     </div>
                 </div>
-                <img src="./assets/fontend/svg/svg_20.svg" loading="lazy" alt="" class="image22" /><img
-                    src="./assets/fontend/svg/svg_21.svg" loading="lazy" alt="" class="image33" />
+                <img src="./assets/fontend/svg/Element 3.svg" loading="lazy" alt=""
+                    class="image22" /><img src="./assets/fontend/svg/Element 8.svg" loading="lazy"
+                    alt="" class="image33" />
             </div>
         </div>
     </div>

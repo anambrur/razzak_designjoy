@@ -77,7 +77,7 @@ class FormController extends Controller
     }
     public function logo_form_store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         $request->validate([
             'company_description' => 'required|string|max:255',
             'font_selection' => 'required|array',
@@ -149,7 +149,6 @@ class FormController extends Controller
     public function web_form_data()
     {
         $web_form = Form::where('form_type', 'web_form')->get();
-
 
         return view('admin.form.web_form', compact('web_form'));
     }

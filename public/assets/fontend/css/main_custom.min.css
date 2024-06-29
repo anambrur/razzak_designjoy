@@ -2237,7 +2237,7 @@ ul {
   width: 17vw;
   max-width: 230px;
   position: absolute;
-  top: 31%;
+  top: 25%;
   bottom: auto;
   left: auto;
   right: 0%;
@@ -2246,7 +2246,7 @@ ul {
   width: 14vw;
   max-width: 230px;
   position: absolute;
-  top: 23%;
+  top: 33%;
   bottom: auto;
   left: 0%;
   right: auto;
@@ -2747,7 +2747,7 @@ ul {
   width: 15vw;
   max-width: 160px;
   position: absolute;
-  top: 5%;
+  top: 12%;
   bottom: auto;
   left: 0%;
   right: auto;
@@ -2782,7 +2782,7 @@ ul {
   width: 25vw;
   max-width: 300px;
   position: absolute;
-  top: 13%;
+  top: 5%;
   bottom: auto;
   left: auto;
   right: -2%;
@@ -3458,7 +3458,7 @@ html.w-mod-js [data-ix="referral-code"] {
   }
   .image-77 {
     min-width: 150px;
-    top: 2%;
+    top: 12%;
   }
   .image-78 {
     min-width: 170px;

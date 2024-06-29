@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(HeaderSeeder::class);
         $this->call(BookingLinkSeeder::class);
+        $this->call(PriceSeeder::class);
     }
 }

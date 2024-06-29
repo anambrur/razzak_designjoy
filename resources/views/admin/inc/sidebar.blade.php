@@ -43,10 +43,7 @@
                                 <a href="{{ route('header.index') }}" class="nav-link" data-key="t-analytics">
                                     Logo </a>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a href="{{ route('booking') }}" class="nav-link" data-key="t-analytics">
-                                    Booking Link</a>
-                            </li> --}}
+
 
                         </ul>
                     </div>
@@ -80,7 +77,19 @@
                         <i class="ri-honour-line"></i> <span data-key="t-widgets">Booking Link</span>
                     </a>
                 </li>
-                
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('price.index') }}">
+                        <i class="ri-honour-line"></i> <span data-key="t-widgets">Price List</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('project_photo.index') }}">
+                        <i class="ri-honour-line"></i> <span data-key="t-widgets">Project Photo</span>
+                    </a>
+                </li>
+
 
 
                 <li class="nav-item">
