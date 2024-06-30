@@ -18,6 +18,9 @@ class Price extends Model
         'marketing_basic',
         'marketing_standard',
         'marketing_pro',
+        'subscription_basic',
+        'subscription_standard',
+        'subscription_pro',
     ];
 }
 

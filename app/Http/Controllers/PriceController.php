@@ -43,6 +43,9 @@ class PriceController extends Controller
             'marketing_basic' => 'required',
             'marketing_standard' => 'required',
             'marketing_pro' => 'required',
+            'subscription_basic' => 'required',
+            'subscription_standard' => 'required',
+            'subscription_pro' => 'required',
         ]);
 
         // Ensure price ID is valid
@@ -54,7 +57,8 @@ class PriceController extends Controller
         Price::create($request->only([
             'web_basic', 'web_standard', 'web_pro',
             'logo_basic', 'logo_standard', 'logo_pro',
-            'marketing_basic', 'marketing_standard', 'marketing_pro'
+            'marketing_basic', 'marketing_standard', 'marketing_pro',
+            'subscription_basic', 'subscription_standard', 'subscription_pro'
         ]));
 
         // Redirect with success message
@@ -93,3 +97,51 @@ class PriceController extends Controller
         //
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+                <div class="global-padding">
+                    <div class="container-large">
+                        <div class="footer_padding">
+                            <div class="div-block-10">
+                                <div class="div-block-11"><a href="/" aria-current="page"
+                                        class="w-inline-block w--current"><img
+                                            src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250533_614a5000615d62efc4f90f5f_Group%202263.svg"
+                                            loading="lazy" alt="" class="image-2"></a>
+                                    <div class="div-block-12"><img
+                                            src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250534_611d718c63e40202e8a17cd3_Frame.svg"
+                                            loading="lazy" alt="" class="image-3">
+                                        <div>Designjoy is headquartered in fffffff<br>Phoenix, Arizona.</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="div-block-13">
+                                        <div id="w-node-_2cab0df4-26a8-261b-cb58-eb9d590844c8-56250509"
+                                            class="footer-col"><a href="#recent-work" class="footer-link">Latest
+                                                projects</a><a href="#pricing" class="footer-link">Pricing</a><a
+                                                href="#" class="footer-link">Contact</a></div>
+                                        <div id="w-node-cea27d24-1150-ad15-a4a3-8f847e96269e-56250509"
+                                            class="footer-col"><a href="#pricing" class="footer-link">Get
+                                                started</a><a href="/terms-and-conditions" class="footer-link">Terms
+                                                &amp; Condition</a><a href="/privacy-policy"
+                                                class="footer-link">Privacy policy</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>

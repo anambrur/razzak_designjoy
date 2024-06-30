@@ -22,6 +22,9 @@ return new class extends Migration
             $table->string('marketing_basic', 50)->nullable();
             $table->string('marketing_standard', 50)->nullable();
             $table->string('marketing_pro', 50)->nullable();
+            $table->string('subscription_basic', 50)->nullable();
+            $table->string('subscription_standard', 50)->nullable();
+            $table->string('subscription_pro', 50)->nullable();
             $table->timestamps();
         });
     }

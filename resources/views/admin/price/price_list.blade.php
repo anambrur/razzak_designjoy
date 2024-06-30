@@ -151,6 +151,48 @@
 
                                 </div><!--end row-->
                             </div>
+                            <div class="card p-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="subscription_basic" class="form-label">Subscription Basic Price</label>
+                                            <input type="text" name="subscription_basic"
+                                                value="{{ $price->marketing_basic }}"
+                                                class="form-control @error('subscription_basic') is-invalid @enderror"
+                                                placeholder="Enter Subscription Basic Price" id="subscription_basic">
+                                            @error('subscription_basic')
+                                                <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="subscription_standard" class="form-label">Subscription Standard
+                                                Price</label>
+                                            <input type="text" name="subscription_standard"
+                                                value="{{ $price->marketing_standard }}"
+                                                class="form-control @error('subscription_standard') is-invalid @enderror"
+                                                placeholder="Enter Subscription Standard Price" id="subscription_standard">
+                                            @error('subscription_standard')
+                                                <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label for="subscription_pro" class="form-label">Subscription Pro Price</label>
+                                            <input type="text" name="subscription_pro"
+                                                value="{{ $price->marketing_pro }}"
+                                                class="form-control @error('subscription_pro') is-invalid @enderror"
+                                                placeholder="Enter Subscription Pro Price" id="subscription_pro">
+                                            @error('subscription_pro')
+                                                <div class="invalid-feedback">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div><!--end col-->
+
+                                </div><!--end row-->
+                            </div>
 
                             <div class="card-body">
                                 <div class="row p-2">

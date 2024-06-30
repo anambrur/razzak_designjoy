@@ -282,8 +282,8 @@
                             data-w-id="838ed669-6179-4f03-b8f2-8f25cd0e637e" alt="" class="divider m-t-24" />
                         <h2 class="hiw-heading">Membership benefits</h2>
                         <p class="bb__sub">
-                            Perks so good you&#x27;ll never need to go anywhere else for
-                            your design. Seriously.
+                            Enjoy tailored solutions so complete, you won't need to go anywhere else for your design
+                            needs. Seriously.
                         </p>
                     </div>
                     <div class="w-layout-grid benefits__grid">
@@ -451,6 +451,9 @@
                             data-w-id="1973bfe6-8075-674b-57c6-174cce2c7941" alt=""
                             class="divider m-t-20 m-2-30" />
                     </div>
+
+
+
                     <div class="pricing__flex">
                         <div data-w-id="895bc74e-6c1c-7c4e-3c2e-57a1a886b0ee" style="opacity: 0"
                             class="pricing__left">
@@ -505,13 +508,13 @@
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
                                 <div class="tabs-menu w-tab-menu">
-                                    <a data-w-tab="Tab 3" class="tab w-inline-block w-tab-link">
+                                    <a data-w-tab="Tab 3" class="tab_custom w-inline-block w-tab-link">
                                         <div>Basic</div>
                                     </a>
-                                    <a data-w-tab="Tab 1" class="tab w-inline-block w-tab-link w--current">
+                                    <a data-w-tab="Tab 1" class="tab_custom w-inline-block w-tab-link w--current">
                                         <div>Standard</div>
                                     </a>
-                                    <a data-w-tab="Tab 2" class="tab w-inline-block w-tab-link">
+                                    <a data-w-tab="Tab 2" class="tab_custom w-inline-block w-tab-link">
                                         <img loading="lazy" src="./assets/fontend/svg/svg_14.svg" alt=""
                                             class="tab__bolt" />
                                         <div class="text-block">Pro</div>
@@ -537,23 +540,30 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Content integration : 3-5 pages
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Language : 1 language
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Web hosting plan 1 free year
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Domain name not included
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                Maintenance not included
                                                             </p>
                                                         </div>
                                                     </li>
@@ -562,17 +572,22 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Website statistics (Google Search Console)
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            SSL certification 1 free year
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            MAINTENANCE not included
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Go live – 20 working days
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -614,23 +629,37 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Preliminary study
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Content integration : 6-9 pages
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Language : 1 language
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Web hosting plan 1 free year
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                SEO included (basic – only 2 keywords)
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                SSL certification for a year
                                                             </p>
                                                         </div>
                                                     </li>
@@ -639,17 +668,27 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Domain name included
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            Business email account for a year
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Website statistics (Google Search Console)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Maintenance regular update (6 months)
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Go live – 35 working days
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -688,42 +727,44 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            <span class="highlight">Two requests at a time</span>
+                                                            <span class="highlight">Preliminary study</span>
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Web design
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Graphic design (4 sets)
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-_4d1ba718-62d7-e091-d8fb-0c60a3c1cacd-25345308"
                                                     role="list">
                                                     <li>
-                                                        <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
-                                                        </p>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                Content integration : ~ 12 pages
+                                                            </p>
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            Language : 1 language
+                                                        </p>
+                                                    </li>
+
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            E-catalogue
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Web hosting plan 1 free year
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -788,26 +829,20 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            5 design suggestions
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            2 feedback rounds
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Logo in various file formats
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-d77ee87c-05fc-f6a1-0852-343d9ba27069-25345308"
                                                     role="list">
@@ -816,11 +851,7 @@
                                                             Unlimited stock photos
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest">
-                                                            Unlimited users
-                                                        </p>
-                                                    </li>
+
                                                     <li>
                                                         <p class="p-small smaller smallest web">
                                                             Pause or cancel anytime
@@ -863,23 +894,23 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            10 design suggestions
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            3 feedback rounds
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Logo in various file formats
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Business cards(including printing)
                                                             </p>
                                                         </div>
                                                     </li>
@@ -938,32 +969,26 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            <span class="highlight">Two requests at a time</span>
+                                                            <span class="highlight">15 design suggestions</span>
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            4 feedback rounds
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Logo in various file formats
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-_4d1ba718-62d7-e091-d8fb-0c60a3c1cacd-25345308"
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Vectorize logo
                                                         </p>
                                                     </li>
                                                     <li>
@@ -975,6 +1000,13 @@
                                                         <p class="p-small smaller smallest web">
                                                             Pause or cancel anytime
                                                         </p>
+                                                    </li>
+                                                    <li>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                Business cards(including printing)
+                                                            </p>
+                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1035,44 +1067,26 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Profile creation on Facebook, Twitter, Instagram & LinkedIn
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Complete branding i.e profile & cover photos as per your
+                                                            brand identity
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest">
-                                                            Unlimited brands
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-d77ee87c-05fc-f6a1-0852-343d9ba27069-25345308"
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Completing the profiles in a way to help maximum visibility
+                                                            over search engines
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest">
-                                                            Unlimited users
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
-                                                        </p>
-                                                    </li>
+
                                                 </ul>
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
@@ -1110,42 +1124,27 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Profiles creation & complete branding
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Weekly updates/posting on profiles to increase likes &
+                                                            clients/visitors engagement
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest">
-                                                            Unlimited brands
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-d77ee87c-05fc-f6a1-0852-343d9ba27069-25345308"
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Biweekly active campaigns for brand/product awareness
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Monthly analytics reports on customer/clients engagement
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -1186,42 +1185,39 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            <span class="highlight">Two requests at a time</span>
+                                                            <span class="highlight">•Profiles creation & complete
+                                                                branding</span>
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            Weekly updates/posting on profiles to increase likes &
+                                                            clients/visitors engagement
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            2 X Paid campaigns on Google & Facebook
                                                         </p>
                                                     </li>
-                                                    <li>
-                                                        <div class="div-block-24">
-                                                            <p class="p-small smaller smallest web">
-                                                                Webflow development
-                                                            </p>
-                                                        </div>
-                                                    </li>
+
                                                 </ul>
                                                 <ul id="w-node-_4d1ba718-62d7-e091-d8fb-0c60a3c1cacd-25345308"
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Biweekly active campaigns for brand/product awareness
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            Social media repute management
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Reply to clients private messages & reviews reply
+                                                            management*
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -1267,7 +1263,7 @@
                                     <div data-w-tab="Tab 3" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                CHF 2'995
+                                                CHF {{ $price->subscription_basic }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1283,23 +1279,30 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Includes Web Hosting
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            WordPress, theme, and plugin updates
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Security monitoring
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Uptime monitoring
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="div-block-24">
+                                                            <p class="p-small smaller smallest web">
+                                                                Yearly website review
                                                             </p>
                                                         </div>
                                                     </li>
@@ -1308,17 +1311,22 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Daily backup
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            Priority support
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Monthly report
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Up to 1 hour/mo time
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -1341,7 +1349,7 @@
                                     <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                CHF 4'995
+                                                CHF {{ $price->subscription_standard }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 One request at a time.
@@ -1357,23 +1365,38 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            One request at a time
+                                                            Includes Web Hosting
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            WordPress, theme, and plugin updates
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Security monitoring
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Daily backup
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Priority support
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Monthly report
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Uptime monitoring
                                                             </p>
                                                         </div>
                                                     </li>
@@ -1382,17 +1405,32 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Link monitor
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            6 monthly performance checks
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Homepage visual monitoring
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Premium on-site SEO software
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            6 monthly website review
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Reduced hourly rate for additional time
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -1415,7 +1453,7 @@
                                     <div data-w-tab="Tab 2" class="w-tab-pane">
                                         <div class="pricing__right-top">
                                             <h4 class="m-b-0">
-                                                CHF 7'995
+                                                CHF {{ $price->subscription_pro }}
                                             </h4>
                                             <p class="p-small smaller smallest no">
                                                 Double the requests.
@@ -1431,23 +1469,43 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            <span class="highlight">Two requests at a time</span>
+                                                            <span class="highlight">Includes Web Hosting</span>
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Average 48 hour delivery
+                                                            WordPress, theme, and plugin updates
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited brands
+                                                            Security monitoring
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Daily backup
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Priority support
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Monthly report
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest">
+                                                            Link monitor
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <div class="div-block-24">
                                                             <p class="p-small smaller smallest web">
-                                                                Webflow development
+                                                                Uptime monitoring
                                                             </p>
                                                         </div>
                                                     </li>
@@ -1456,17 +1514,42 @@
                                                     role="list">
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited stock photos
+                                                            Up to 5 hours/mo time
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest">
-                                                            Unlimited users
+                                                            3 monthly website review
                                                         </p>
                                                     </li>
                                                     <li>
                                                         <p class="p-small smaller smallest web">
-                                                            Pause or cancel anytime
+                                                            Reduced hourly rate for additional time
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            3 monthly performance checks
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Homepage visual monitoring
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Premium on-site SEO software
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            Social media feed integration
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="p-small smaller smallest web">
+                                                            SEO tracking and reporting
                                                         </p>
                                                     </li>
                                                 </ul>
@@ -1781,7 +1864,7 @@
                             class="call__card">
                             <img src="./assets/fontend/img/people_1.png" loading="lazy" alt=""
                                 class="image-81" />
-                            <h4 class="call__heading intro">Book a 15-minute intro call</h4>
+                            <h4 class="call__heading intro">Book a 30-minute intro call</h4>
                             <div class="button__wrapper">
                                 <a href="https://calendly.com/designjoy/designjoy-intro-1?month=2024-02"
                                     target="_blank" class="button w-inline-block">
@@ -1866,7 +1949,7 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
+            {{-- <div class="footer">
                 <div class="container">
                     <div data-w-id="4bc59bbe-187b-ea36-3122-efb5ac8b4b96" style="opacity: 0" class="scope _2">
                         <h2 class="hiw-heading">
@@ -1905,8 +1988,46 @@
                 <img src="./assets/fontend/svg/Element 3.svg" loading="lazy" alt=""
                     class="image22" /><img src="./assets/fontend/svg/Element 8.svg" loading="lazy"
                     alt="" class="image33" />
-            </div>
+            </div> --}}
+
+            <footer>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            {{-- <a href="/" aria-current="page" class="w-inline-block w--current"><img
+                                    src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250533_614a5000615d62efc4f90f5f_Group%202263.svg"
+                                    loading="lazy" alt="" class="image-2"></a> --}}
+                        </div>
+                        {{-- <div class="div-block-12"><img
+                                src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250534_611d718c63e40202e8a17cd3_Frame.svg"
+                                loading="lazy" alt="" class="image-3"> --}}
+                            <div>Designjoy is headquartered in fffffff<br>Phoenix, Arizona.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Latest Project</li>
+                            <li>Pricing</li>
+                            <li>contact</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li>Get Start</li>
+                            <li>Terms & Condition</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+
+
+            
+
         </div>
+
+
     </div>
 
 
