@@ -56,7 +56,12 @@
         <form id="multi-step-form" class="mt-4" method="POST" action="{{ route('marketing_form_store') }}">
             @csrf
             <input type="hidden" name="form_type" value="marketing_form">
-             {{-- Step 1 --}}
+
+            {{-- input field for Stripe --}}
+            <input type="hidden" name="price" value="{{ $price }}">
+            <input type="hidden" name="productName" value="{{ $product }}">
+
+            {{-- Step 1 --}}
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> Which online marketing platform or service would you require for
                     your campaign:This question is required.*</p>
@@ -192,7 +197,7 @@
             </div>
 
 
-           {{-- Step 2  --}}
+            {{-- Step 2  --}}
             <div class="form-step">
                 <p><span class="step-number">2 →</span> What is the goal of your online marketing campaign:This
                     question is required.*</p>
@@ -207,7 +212,7 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-           {{-- step --}}
+            {{-- step 3 --}}
             <div class="form-step">
                 <p><span class="step-number">3 →</span> Describe your company or identity:This question is required.*
                 </p>
@@ -223,15 +228,11 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-
-
-
-
-
             <!-- Step 4 -->
             <div class="form-step">
                 <p>
-                    <span class="step-number">4 →</span> Would your online marketing campaing require us to maintain or deliver content on regular basis?This question is required.*
+                    <span class="step-number">4 →</span> Would your online marketing campaing require us to maintain or
+                    deliver content on regular basis?This question is required.*
                 </p>
                 <p class="subtext">
                     i.e. Post daily on Facebook in your name, send out monthly newsletters in your name etc...
@@ -260,7 +261,6 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-
             <!-- Step 5 -->
             <div class="form-step">
                 <p><span class="step-number">5 →</span> Additional Information (Optional):</p>
@@ -274,7 +274,6 @@
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
-
 
             <!-- Step 6 -->
             <div class="form-step">
@@ -366,7 +365,6 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-
             <!-- Step 7 -->
             <div class="form-step">
                 <p>
@@ -421,10 +419,7 @@
                 <button type="button" class="next btn btn-primary">Ok</button>
                 <button type="button" class="previous btn btn-secondary"> <span><i
                             class="fa-solid fa-chevron-up"></i></span></button>
-            </div>>
-
-
-
+            </div>
 
             <!-- Step 8 -->
             <div class="form-step">
@@ -523,12 +518,9 @@
                             class="fa-solid fa-chevron-up"></i></span></button>
             </div>
 
-
-
-
             <!-- Step 10 -->
             <div class="form-step">
-                <p><span class="step-number">8 →</span> Your contact information*</p>
+                <p><span class="step-number">10 →</span> Your contact information*</p>
                 <div class="mb-5">
                     <label for="first-name" class="form-label">First name *</label>
                     <input type="text" class="form-control_custom" id="first-name" name="first_name"
@@ -596,8 +588,6 @@
                 progressBar.css('width', progress);
             }
 
-
-            ///
             function updateAdditionalNeed() {
                 let selectedNeeds = [];
                 $('.additional-need-checkbox:checked').each(function() {
@@ -606,7 +596,6 @@
                 selectedAdditionalNeedInput.val(JSON.stringify(selectedNeeds));
             }
 
-            ///
             function updateSelectedFont() {
                 let fontNeeds = [];
                 $('.font-selection-checkbox:checked').each(function() {
@@ -614,9 +603,6 @@
                 });
                 selectedFontInput.val(JSON.stringify(fontNeeds));
             }
-
-
-
 
             // Next button click handler
             $('.next').click(function() {
@@ -649,7 +635,6 @@
                 }
             });
 
-
             // Logo type selection click handler (for Step 1)
             $('.logo-type-selection').click(function() {
                 const checkbox = $(this).find('.logo-type-selection-checkbox');
@@ -673,7 +658,6 @@
                 $(this).toggleClass('selected');
                 updateSelectedFont();
             });
-
 
             updateProgressBar();
         });

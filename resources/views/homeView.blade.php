@@ -12,14 +12,19 @@
     <link rel="stylesheet" href="./assets/fontend/css/main_custom.min.css" />
     <link rel="stylesheet" href="./assets/fontend/css/style.css" />
     <link href="./assets/fontend/css/calendly_widget.css" rel="stylesheet" />
-    <script async="" src="./assets/fontend/js/gtag.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- js -->
+    <script async="" src="./assets/fontend/js/gtag.js"></script>
     <script async src="./assets/fontend/js/fs-cc.js" fs-cc-mode="opt-in"></script>
     <script src="./assets/fontend/js/memberstack.js" data-memberstack-id="3975ff834033ff0cc12c91f6a288ec41"></script>
     <script src="./assets/fontend/js/jquery.min.js"></script>
     <script src="./assets/fontend/js/custome.js"></script>
     <script src="./assets/fontend/js/calendly_widget.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </head>
 
 <body class="body">
@@ -503,7 +508,6 @@
 
                         <div data-w-id="215f8bbc-1d94-22cb-c472-3975de472baf" style="opacity: 0"
                             class="pricing__right-card">
-                            <a href="{{ route('index') }}">Payment</a>
                             <h4 class="heading-8">Web Design</h4>
                             <div data-current="Tab 1" data-easing="ease" data-duration-in="300"
                                 data-duration-out="100" class="tabs w-tabs">
@@ -597,7 +601,11 @@
 
 
 
-                                                    <a href="{{ route('web_form') }}" class="button w-inline-block">
+                                                    {{-- <a href="{{ route('web_form') }}" class="button w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('web_form', ['price' => $price->web_basic, 'product' => 'Web Design']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -695,7 +703,11 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{ route('web_form') }}" class="button w-inline-block">
+                                                    {{-- <a href="{{ route('web_form') }}" class="button w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('web_form', ['price' => $price->web_standard, 'product' => 'Web Design']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -771,8 +783,12 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
+                                                    {{-- <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
                                                         style="opacity: 0" href="{{ route('web_form') }}"
+                                                        class="button w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('web_form', ['price' => $price->web_pro, 'product' => 'Web Design']) }}"
                                                         class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
@@ -861,8 +877,13 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{ route('logo_form') }}"
+                                                    {{-- <a href="{{ route('logo_form') }}"
                                                         class="button_custom w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+
+                                                    <a href="{{ route('logo_form', ['price' => $price->logo_basic, 'product' => 'Logo Basic Design']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -936,8 +957,12 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{ route('logo_form') }}"
+                                                    {{-- <a href="{{ route('logo_form') }}"
                                                         class="button_custom w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('logo_form', ['price' => $price->logo_standard, 'product' => 'Logo Standard Design']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1012,11 +1037,17 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
+                                                    {{-- <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
                                                         style="opacity: 0" href="{{ route('logo_form') }}"
                                                         class="button_custom w-inline-block">
                                                         <div>Get started</div>
+                                                    </a> --}}
+                                                    
+                                                    <a href="{{ route('logo_form', ['price' => $price->logo_pro, 'product' => 'Logo Pro Design']) }}"
+                                                        class="button w-inline-block">
+                                                        <div>Get started</div>
                                                     </a>
+
                                                 </div>
                                                 <div class="text-block-5">
                                                     or
@@ -1091,8 +1122,12 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{ route('marketing_form') }}"
+                                                    {{-- <a href="{{ route('marketing_form') }}"
                                                         class="button_custom w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('marketing_form', ['price' => $price->marketing_basic, 'product' => 'Online Basic Marketing']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1151,8 +1186,12 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a href="{{ route('marketing_form') }}"
+                                                    {{-- <a href="{{ route('marketing_form') }}"
                                                         class="button_custom w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('marketing_form', ['price' => $price->marketing_standard, 'product' => 'Online Standard Marketing']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1224,9 +1263,13 @@
                                             </div>
                                             <div class="pricing__right-cta-wrapper">
                                                 <div class="button__wrapper m-t-0">
-                                                    <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
+                                                    {{-- <a data-w-id="4d1ba718-62d7-e091-d8fb-0c60a3c1cadc"
                                                         style="opacity: 0" href="{{ route('marketing_form') }}"
                                                         class="button_custom w-inline-block">
+                                                        <div>Get started</div>
+                                                    </a> --}}
+                                                    <a href="{{ route('marketing_form', ['price' => $price->marketing_pro, 'product' => 'Online Pro Marketing']) }}"
+                                                        class="button w-inline-block">
                                                         <div>Get started</div>
                                                     </a>
                                                 </div>
@@ -1949,84 +1992,47 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="footer">
-                <div class="container">
-                    <div data-w-id="4bc59bbe-187b-ea36-3122-efb5ac8b4b96" style="opacity: 0" class="scope _2">
-                        <h2 class="hiw-heading">
-                            See if Designjoy is right for you. (It totally is.)
-                        </h2>
-                        <p class="bb__sub">
-                            Get a guided tour through Designjoy, and find out how you and
-                            your team can change the way you source design, forever.
-                        </p>
-                        <div class="button__wrapper m-t-40">
-                            <a data-w-id="224d725d-e235-14d1-b9e1-a551fd064e72" style="opacity: 0"
-                                href="https://tidycal.com/sarkeribrahim/30-minute-meeting" target="_blank"
-                                class="button w-inline-block">
-                                <div>Book a call</div>
-                            </a>
-                        </div>
-                    </div>
-                    <a href="index.html#" class="footer__logo-wrapper w-inline-block">
-                        <div data-w-id="0aadedfa-4eca-a051-6a71-db993083d5c7" data-is-ix2-target="1"
-                            class="footer__smile" data-animation-type="lottie"
-                            data-src="./assets/fontend/json/footer_logo.json" data-loop="0" data-direction="1"
-                            data-autoplay="0" data-renderer="svg" data-default-duration="0.8341674668578307"
-                            data-duration="0"></div>
-                        <img src="./assets/fontend/svg/logo.svg" loading="lazy" alt=""
-                            class="footer__text" />
-                    </a>
-                    <div data-w-id="6e593d98-4d75-1f2e-ea69-5280f09c1dbd" style="opacity: 0" class="div-block-22">
-                        <a href="#" target="_blank" class="link">Latest projects</a><a
-                            href="index.html#plans" class="link">Pricing</a><a href="mailto:hello@designjoy.co"
-                            class="link">Contact</a><a href="#" target="_blank" class="link">Client
-                            login</a><a href="index.html#plans" class="link">Get started</a><a href="#"
-                            target="_blank" class="link">Terms &amp; conditions</a><a href="#"
-                            target="_blank" class="link">Privacy policy</a>
-                    </div>
-                </div>
-                <img src="./assets/fontend/svg/Element 3.svg" loading="lazy" alt=""
-                    class="image22" /><img src="./assets/fontend/svg/Element 8.svg" loading="lazy"
-                    alt="" class="image33" />
-            </div> --}}
 
-            <footer>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div>
-                            {{-- <a href="/" aria-current="page" class="w-inline-block w--current"><img
-                                    src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250533_614a5000615d62efc4f90f5f_Group%202263.svg"
-                                    loading="lazy" alt="" class="image-2"></a> --}}
+            <footer class="bg-dark text-white py-4 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center align-items-center text-md-start justify-center"
+                            style="display: flex; align-items: center; ">
+                            <img src="{{ Storage::url($header->logo) }}" loading="lazy" alt=""
+                                style="width: 100%; max-width: 200px; height: auto;" class="image-84" />
                         </div>
-                        {{-- <div class="div-block-12"><img
-                                src="https://assets.website-files.com/6484ceb82495841656250545/6484ceb82495841656250534_611d718c63e40202e8a17cd3_Frame.svg"
-                                loading="lazy" alt="" class="image-3"> --}}
-                            <div>Designjoy is headquartered in fffffff<br>Phoenix, Arizona.</div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6 text-center text-md-start">
+                                    <ul class="list-unstyled">
+                                        <li class="footer_li"><a href="#plan" class="text-white aTag">Latest
+                                                projects</a></li>
+                                        <li class="footer_li"><a href="#faq"
+                                                class="text-white aTag">Pricing</a>
+                                        </li>
+                                        <li class="footer_li"><a href="#services"
+                                                class="text-white aTag">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 text-center text-md-start">
+                                    <ul class="list-unstyled">
+                                        <li class="footer_li"><a href="#hiw" class="text-white aTag">Get
+                                                started</a></li>
+                                        <li class="footer_li"><a href="#benefits" class="text-white aTag">Terms &
+                                                Condition</a></li>
+                                        <li class="footer_li"><a href="#" class="text-white aTag">Privacy
+                                                policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <ul>
-                            <li>Latest Project</li>
-                            <li>Pricing</li>
-                            <li>contact</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2">
-                        <ul>
-                            <li>Get Start</li>
-                            <li>Terms & Condition</li>
-                            <li>Privacy Policy</li>
-                        </ul>
                     </div>
                 </div>
             </footer>
 
-
-
-            
-
         </div>
-
 
     </div>
 

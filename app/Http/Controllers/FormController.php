@@ -63,18 +63,29 @@ class FormController extends Controller
     }
 
     /////custom form 
-    public function web_form()
+    public function web_form(Request $request)
     {
-        return view('form.web_form');
+
+        $price = $request->query('price');
+        $product = $request->input('product');
+        return view('form.web_form', compact('price', 'product'));
     }
-    public function logo_form()
+    public function logo_form(Request $request)
     {
-        return view('form.logo_form');
+
+        $price = $request->query('price');
+        $product = $request->input('product');
+        return view('form.logo_form', compact('price', 'product'));
     }
-    public function marketing_form()
+
+    public function marketing_form(Request $request)
     {
-        return view('form.marketing_form');
+
+        $price = $request->query('price');
+        $product = $request->input('product');
+        return view('form.marketing_form', compact('price', 'product'));
     }
+
     public function logo_form_store(Request $request)
     {
         // dd($request->all());
@@ -94,11 +105,16 @@ class FormController extends Controller
         ]);
 
         Form::create(['form_type' => $request->form_type, 'logo_type' => $request->logo_type, 'font_selection' => $request->font_selection, 'websites' => $request->websites, 'company_description' => $request->company_description, 'details' => $request->details, 'source_7' => $request->source_7, 'additional_needs' => $request->additional_needs, 'first_name' => $request->first_name, 'last_name' => $request->last_name, 'phone_number' => $request->phone_number, 'email' => $request->email, 'company' => $request->company]);
-        return redirect()->route('homeView');
+
+        //stripe data
+        $price = $request->input('price');
+        $productName = $request->input('productName');
+        return view('stripe.form', compact('price', 'productName'));
     }
+
+
     public function web_form_store(Request $request)
     {
-        
         $request->validate([
             'form_type' => 'required|string|max:255',
             'stape_1' => 'required|string|max:255',
@@ -116,13 +132,33 @@ class FormController extends Controller
             'email' => 'required|email|max:255',
             'company' => 'nullable|string|max:255',
         ]);
-        Form::create(['form_type' => $request->form_type, 'stape_1' => $request->stape_1, 'company_description' => $request->company_description, 'font_selection' => $request->font_selection, 'stape_4' => $request->stape_4, 'source_5' => $request->source_5, 'source_6' => $request->source_6, 'source_7' => $request->source_7, 'additional_needs' => $request->additional_needs, 'source_9' => $request->source_9, 'first_name' => $request->first_name, 'last_name' => $request->last_name, 'phone_number' => $request->phone_number, 'email' => $request->email, 'company' => $request->company]);
-        return redirect()->route('homeView');
+
+        Form::create([
+            'form_type' => $request->form_type,
+            'stape_1' => $request->stape_1,
+            'company_description' => $request->company_description,
+            'font_selection' => $request->font_selection,
+            'stape_4' => $request->stape_4,
+            'source_5' => $request->source_5,
+            'source_6' => $request->source_6,
+            'source_7' => $request->source_7,
+            'additional_needs' => $request->additional_needs,
+            'source_9' => $request->source_9,
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
+            'email' => $request->email,
+            'company' => $request->company,
+        ]);
+
+        $price = $request->input('price');
+        $productName = $request->input('productName');
+        return view('stripe.form', compact('price', 'productName'));
     }
+
+
     public function marketing_form_store(Request $request)
     {
-        // dd($request->all());
-
         $request->validate([
             'logo_type' => 'required|array',
             'company_description' => 'required|string|max:255',
@@ -141,7 +177,11 @@ class FormController extends Controller
         ]);
 
         Form::create(['form_type' => $request->form_type, 'logo_type' => $request->logo_type, 'marketing_goal' => $request->marketing_goal, 'company_description' => $request->company_description, 'source_4' => $request->source_4, 'source_5' => $request->source_5, 'additional_needs' => $request->additional_needs, 'source_6' => $request->source_6, 'source_7' => $request->source_7, 'source_9' => $request->source_9, 'first_name' => $request->first_name, 'last_name' => $request->last_name, 'phone_number' => $request->phone_number, 'email' => $request->email, 'company' => $request->company]);
-        return redirect()->route('homeView');
+
+        //stripe data
+        $price = $request->input('price');
+        $productName = $request->input('productName');
+        return view('stripe.form', compact('price', 'productName'));
     }
 
 
@@ -156,7 +196,7 @@ class FormController extends Controller
     {
 
         $logo_form = Form::where('form_type', 'logo_form')->get();
-        
+
         return view('admin.form.logo_form', compact('logo_form'));
     }
     public function marketing_form_data()

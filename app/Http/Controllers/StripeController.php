@@ -24,7 +24,7 @@ class StripeController extends Controller
                     'price_data' => [
                         'currency' => 'usd',
                         'product_data' => [
-                            'name' => 'Mobile Phone',
+                            'name' => $request->input('productName'),
                         ],
                         'unit_amount' => $request->input('price') * 100,
                     ],
@@ -35,20 +35,20 @@ class StripeController extends Controller
             'success_url' => route('success') . '?session_id={CHECKOUT_SESSION_ID}',
             'cancel_url' => route('cancel'),
         ]);
-        // dd($response);
+
         if (isset($response->id) && $response->id != '') {
-            session()->put('product_name', 'Mobile Phone');
+            session()->put('product_name', $request->input('productName'));
             session()->put('quantity', 1);
             session()->put('price', $request->input('price'));
             return redirect($response->url);
         } else {
-            return redirect()->route('cancel');
+            return view('stripe.cancel');
         }
     }
 
     public function success(Request $request)
     {
-
+        
         if (isset($request->session_id)) {
             $stripeSecret = config('stripe.secret');
             $stripe = new StripeClient($stripeSecret);
@@ -69,17 +69,14 @@ class StripeController extends Controller
             session()->forget('product_name');
             session()->forget('quantity');
             session()->forget('price');
-
-            // return "Payment is successful";
-            return redirect()->route('success');
+            return view('stripe.success');
         } else {
-            return redirect()->route('cancel');
+            return view('stripe.cancel');
         }
     }
 
     public function cancel()
     {
-        return "Payment is canceled.";
         return redirect()->route('cancel');
     }
 }

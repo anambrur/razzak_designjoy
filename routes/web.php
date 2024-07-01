@@ -12,7 +12,7 @@ use App\Http\Controllers\StripeController;
 
 
 //stripe
-Route::get('stripe', [StripeController::class, 'index'])->name('index');
+// Route::get('stripe', [StripeController::class, 'index'])->name('index');
 Route::post('stripe', [StripeController::class, 'stripe'])->name('stripe');
 Route::get('success', [StripeController::class, 'success'])->name('success');
 Route::get('cancel', [StripeController::class, 'cancel'])->name('cancel');
@@ -27,6 +27,7 @@ Route::get('/marketing_form', [FormController::class, 'marketing_form'])->name('
 //store
 Route::post('/logo_form_store', [FormController::class, 'logo_form_store'])->name('logo_form_store');
 Route::post('/web_form_store', [FormController::class, 'web_form_store'])->name('web_form_store');
+Route::post('/marketing_form_store', [FormController::class, 'marketing_form_store'])->name('marketing_form_store');
 Route::post('/admin/booking_link_store/{id}', [BookingLinkController::class, 'booking_link_store'])->name('booking_link_store');
 
 

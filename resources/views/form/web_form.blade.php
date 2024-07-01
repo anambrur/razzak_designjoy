@@ -58,6 +58,12 @@
 
 
             <input type="hidden" name="form_type" value="web_form">
+
+            {{-- input field for Stripe --}}
+            <input type="hidden" name="price" value="{{ $price }}">
+            <input type="hidden" name="productName" value="{{ $product }}">
+
+
             <!-- Step 1 -->
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> Describe your company or

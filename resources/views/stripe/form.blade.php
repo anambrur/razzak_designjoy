@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Payment</title>
+    <title>Redirecting to Stripe</title>
 </head>
-
 <body>
-
-    <h2> Product: Mobile Phone</h2>
-    <h3> Price: $25</h3>
-    <form action="{{ route('stripe') }}" method="post">
+    <form id="stripeForm" action="{{ route('stripe') }}" method="POST">
         @csrf
-        <input type="hidden" name="price" value="25">
-        <button type="submit">Pay with Stripe</button>
+        <input type="hidden" name="price" value="{{ $price }}">
+        <input type="hidden" name="productName" value="{{ $productName }}">
     </form>
+    <script type="text/javascript">
+        document.getElementById('stripeForm').submit();
+    </script>
 </body>
-
 </html>

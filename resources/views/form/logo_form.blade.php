@@ -47,6 +47,11 @@
             @csrf
 
             <input type="hidden" name="form_type" value="logo_form">
+
+            {{-- input field for Stripe --}}
+            <input type="hidden" name="price" value="{{ $price }}">
+            <input type="hidden" name="productName" value="{{ $product }}">
+
             <!-- Step 1 -->
             <div class="form-step active">
                 <p><span class="step-number">1 →</span> What are the components you require for the planned logo?</p>

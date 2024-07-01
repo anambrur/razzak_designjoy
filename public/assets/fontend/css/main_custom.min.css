@@ -2568,6 +2568,7 @@ ul {
 .hiw-heading {
     font-family: Brockmann Webfont, sans-serif;
     font-weight: 500;
+    letter-spacing: 0px;
 }
 .hiw-heading._2._3 {
     font-family: Brockmann Webfont, sans-serif;
@@ -2576,6 +2577,7 @@ ul {
     max-width: 630px;
     margin-left: auto;
     margin-right: auto;
+    letter-spacing: 0px;
 }
 .hiw-heading.better {
     font-family: Brockmann Webfont, sans-serif;
@@ -2694,6 +2696,7 @@ ul {
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
+    font-family: Brockmann Webfont;
 }
 .scope {
     z-index: 2;
@@ -3376,9 +3379,11 @@ ul {
 .heading-4 {
     font-family: Brockmann Webfont, sans-serif;
     font-weight: 500;
+    letter-spacing: 0px;
 }
 .heading-5 {
     font-weight: 500;
+    letter-spacing: 0px;
 }
 .heading-6,
 .heading-7,
@@ -3417,6 +3422,49 @@ html.w-mod-js [data-ix="modal-wrapper"] {
 html.w-mod-js [data-ix="referral-code"] {
     transform: translate(0);
 }
+
+/* footer */
+
+footer {
+    background-color: #000;
+    margin-bottom: 100px;
+    font-family: Brockmann Webfont;
+    border-radius: 5px
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.aTag{
+    text-decoration: none !important;
+    color: #ffffff !important;
+    
+   
+}
+
+
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
 @media screen and (max-width: 991px) {
     h1 {
         font-size: 80px;
@@ -3956,17 +4004,6 @@ html.w-mod-js [data-ix="referral-code"] {
         min-width: 90px;
         top: 23%;
     }
-    /* .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  } */
-
-    .footer {
-        background-color: #000;
-        background-image: url(https://assets.website-files.com/6484ceb…/6484ceb…_611b2d3…_Texture.png);
-        background-position: 0 0;
-        background-size: auto;
-    }
 
     .global-padding_custom {
         padding-left: 5%;
@@ -4000,6 +4037,11 @@ html.w-mod-js [data-ix="referral-code"] {
   max-width: 100%;
   display: inline-block;
 } */
+
+
+
+
+
     .div-block-12 {
         grid-column-gap: 12px;
         grid-row-gap: 12px;
